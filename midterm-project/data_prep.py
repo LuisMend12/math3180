@@ -26,7 +26,7 @@ columns = [
     "capital_run_length_total", "spam"
 ]
 
-df = pd.read_csv("spambase/spambase.data", header=None, names=columns)
+df = pd.read_csv("/workspaces/math3180/midterm-project/spambase/spambase.data", header=None, names=columns)
 
 X = df.drop(columns="spam")
 y = df["spam"]

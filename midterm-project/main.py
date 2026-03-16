@@ -29,7 +29,7 @@ columns = [
 
 #Data Preparation (Code Block)
 
-df = pd.read_csv("/workspaces/math3180/midterm-project/spambase/spambase.data", header=None, names=columns)
+df = pd.read_csv("/workspaces/math3180/midterm-project/spambase/spambase.data", header=None, names=columns) #reads the csv file, excel file
 
 X = df.drop(columns="spam")
 y = df["spam"]

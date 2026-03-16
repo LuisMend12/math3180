@@ -36,3 +36,34 @@ X_binary = (X > 0).astype(int)
 X_train, X_test, y_train, y_test = train_test_split(
    X_binary, y, test_size=0.3, random_state=42, stratify=y
 )
+
+
+df["spam"].value_counts().sort_index().plot(kind="bar")
+plt.xticks([0,1],["Non-Spam","Spam"],rotation=0)
+plt.title("Class Distribution")
+plt.show()
+
+features = ["word_freq_free","word_freq_money","char_freq_dollar"]
+
+for col in features:
+   prop = df.groupby("spam")[col].apply(lambda x: (x>0).mean())
+   prop.plot(kind="bar")
+   plt.title(f"Proportion of Emails Containing {col}")
+   plt.show()
+
+
+
+bnb = BernoulliNB()
+bnb.fit(X_train, y_train)
+
+y_pred = bnb.predict(X_test)
+
+print("Accuracy:",accuracy_score(y_test,y_pred))
+print("Precision:",precision_score(y_test,y_pred))
+print("Recall:",recall_score(y_test,y_pred))
+print("F1:",f1_score(y_test,y_pred))
+
+cm = confusion_matrix(y_test,y_pred)
+ConfusionMatrixDisplay(cm).plot()
+plt.savefig("confusion_matrix.png")
+plt.close()

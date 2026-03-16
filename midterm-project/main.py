@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import BernoulliNB
+from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, ConfusionMatrixDisplay, roc_curve, auc, precision_recall_curve
 
 columns = [
@@ -57,8 +58,12 @@ for col in features:
 
 #Model Fitting
 
-bnb = BernoulliNB()
-bnb.fit(X_train, y_train)
+param_grid = {"alpha": [0.01, 0.05, 0.1, 0.25, 0.5, 1.0, 2.0, 5.0]}
+grid_search = GridSearchCV(BernoulliNB(), param_grid, cv=5, scoring="accuracy")
+grid_search.fit(X_train, y_train)
+
+print("Best alpha:", grid_search.best_params_["alpha"])
+bnb = grid_search.best_estimator_
 
 y_pred = bnb.predict(X_test)
 

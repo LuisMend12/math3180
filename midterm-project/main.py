@@ -72,7 +72,7 @@ print("F1:",f1_score(y_test,y_pred))
 
 cm = confusion_matrix(y_test,y_pred)
 ConfusionMatrixDisplay(cm).plot()
-plt.savefig("confusion_matrix.png")
+plt.savefig("/workspaces/math3180/midterm-project/results/confusion_matrix.png")
 plt.close()
 
 # ROC Curve
@@ -85,7 +85,7 @@ plt.xlabel("False Positive Rate")
 plt.ylabel("True Positive Rate")
 plt.title("ROC Curve")
 plt.legend()
-plt.savefig("roc_curve.png")
+plt.savefig("/workspaces/math3180/midterm-project/results/roc_curve.png")
 plt.close()
 
 # Precision-Recall Curve
@@ -94,7 +94,7 @@ plt.plot(recall_vals, precision_vals)
 plt.xlabel("Recall")
 plt.ylabel("Precision")
 plt.title("Precision-Recall Curve")
-plt.savefig("precision_recall_curve.png")
+plt.savefig("/workspaces/math3180/midterm-project/results/precision_recall_curve.png")
 plt.close()
 
 # Metrics Bar Chart
@@ -107,5 +107,5 @@ metrics = {
 plt.bar(metrics.keys(), metrics.values())
 plt.ylim(0, 1)
 plt.title("Model Performance Metrics")
-plt.savefig("metrics_bar.png")
+plt.savefig("/workspaces/math3180/midterm-project/results/metrics_bar.png")
 plt.close()

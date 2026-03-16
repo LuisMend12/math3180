@@ -339,7 +339,7 @@ Example structure:
 
 | Name      | Contribution                                     |
 | --------- | ------------------------------------------------ |
-| Student 1 | Data preprocessing and exploratory analysis      |
+| Luis Mendez | Data preprocessing and exploratory analysis      |
 | Student 2 | Mathematical background and model implementation |
 | Student 3 | Results interpretation and presentation          |
 

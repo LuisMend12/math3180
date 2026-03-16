@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import BernoulliNB
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, ConfusionMatrixDisplay, roc_curve, auc, precision_recall_curve
 
 columns = [
     "word_freq_make", "word_freq_address", "word_freq_all", "word_freq_3d",
@@ -26,6 +26,8 @@ columns = [
     "capital_run_length_total", "spam"
 ]
 
+#Data Preparation (Code Block)
+
 df = pd.read_csv("/workspaces/math3180/midterm-project/spambase/spambase.data", header=None, names=columns)
 
 X = df.drop(columns="spam")
@@ -37,6 +39,7 @@ X_train, X_test, y_train, y_test = train_test_split(
    X_binary, y, test_size=0.3, random_state=42, stratify=y
 )
 
+#Exploratory Analysis
 
 df["spam"].value_counts().sort_index().plot(kind="bar")
 plt.xticks([0,1],["Non-Spam","Spam"],rotation=0)
@@ -52,11 +55,15 @@ for col in features:
    plt.show()
 
 
+#Model Fitting
 
 bnb = BernoulliNB()
 bnb.fit(X_train, y_train)
 
 y_pred = bnb.predict(X_test)
+
+#Evaluation
+
 
 print("Accuracy:",accuracy_score(y_test,y_pred))
 print("Precision:",precision_score(y_test,y_pred))
@@ -66,4 +73,39 @@ print("F1:",f1_score(y_test,y_pred))
 cm = confusion_matrix(y_test,y_pred)
 ConfusionMatrixDisplay(cm).plot()
 plt.savefig("confusion_matrix.png")
+plt.close()
+
+# ROC Curve
+y_prob = bnb.predict_proba(X_test)[:, 1]
+fpr, tpr, _ = roc_curve(y_test, y_prob)
+roc_auc = auc(fpr, tpr)
+plt.plot(fpr, tpr, label=f"AUC = {roc_auc:.2f}")
+plt.plot([0, 1], [0, 1], "k--")
+plt.xlabel("False Positive Rate")
+plt.ylabel("True Positive Rate")
+plt.title("ROC Curve")
+plt.legend()
+plt.savefig("roc_curve.png")
+plt.close()
+
+# Precision-Recall Curve
+precision_vals, recall_vals, _ = precision_recall_curve(y_test, y_prob)
+plt.plot(recall_vals, precision_vals)
+plt.xlabel("Recall")
+plt.ylabel("Precision")
+plt.title("Precision-Recall Curve")
+plt.savefig("precision_recall_curve.png")
+plt.close()
+
+# Metrics Bar Chart
+metrics = {
+    "Accuracy": accuracy_score(y_test, y_pred),
+    "Precision": precision_score(y_test, y_pred),
+    "Recall": recall_score(y_test, y_pred),
+    "F1": f1_score(y_test, y_pred),
+}
+plt.bar(metrics.keys(), metrics.values())
+plt.ylim(0, 1)
+plt.title("Model Performance Metrics")
+plt.savefig("metrics_bar.png")
 plt.close()

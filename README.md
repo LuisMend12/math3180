@@ -1,6 +1,4 @@
-Here is a **clean, professional `README.md`** you can place directly in your GitHub repository for your spam classification project. It is structured like a **real ML project README** and matches the outline you provided.
 
----
 
 # 📧 Spam Email Classification Using Bernoulli Naive Bayes
 

@@ -45,7 +45,6 @@ plt.figure()
 df["spam"].value_counts().sort_index().plot(kind="bar")
 plt.xticks([0,1],["Non-Spam","Spam"],rotation=0)
 plt.title("Class Distribution")
-plt.show()
 plt.close()
 
 features = ["word_freq_free","word_freq_money","char_freq_dollar"]
@@ -55,7 +54,6 @@ for col in features:
     prop = df.groupby("spam")[col].apply(lambda x: (x>0).mean())
     prop.plot(kind="bar")
     plt.title(f"Proportion of Emails Containing {col}")
-    plt.show()
     plt.close()
 
 
@@ -80,10 +78,11 @@ print("F1:",f1_score(y_test,y_pred))
 
 #Confusion Matrix 
 
-plt.figure()
 cm = confusion_matrix(y_test,y_pred)
-ConfusionMatrixDisplay(cm).plot()
+disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+disp.plot()
 plt.savefig("/workspaces/math3180/midterm-project/results/confusion_matrix.png")
+plt.show()
 plt.close()
 
 # ROC Curve
@@ -98,6 +97,7 @@ plt.ylabel("True Positive Rate")
 plt.title("ROC Curve")
 plt.legend()
 plt.savefig("/workspaces/math3180/midterm-project/results/roc_curve.png")
+plt.show()
 plt.close()
 
 # Precision-Recall Curve
@@ -108,6 +108,7 @@ plt.xlabel("Recall")
 plt.ylabel("Precision")
 plt.title("Precision-Recall Curve")
 plt.savefig("/workspaces/math3180/midterm-project/results/precision_recall_curve.png")
+plt.show()
 plt.close()
 
 # Metrics Bar Chart
@@ -122,4 +123,5 @@ plt.bar(metrics.keys(), metrics.values())
 plt.ylim(0, 1)
 plt.title("Model Performance Metrics")
 plt.savefig("/workspaces/math3180/midterm-project/results/metrics_bar.png")
+plt.show()
 plt.close()

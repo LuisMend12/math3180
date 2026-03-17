@@ -41,19 +41,22 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 #Exploratory Analysis
-
+plt.figure()
 df["spam"].value_counts().sort_index().plot(kind="bar")
 plt.xticks([0,1],["Non-Spam","Spam"],rotation=0)
 plt.title("Class Distribution")
 plt.show()
+plt.close()
 
 features = ["word_freq_free","word_freq_money","char_freq_dollar"]
 
 for col in features:
-   prop = df.groupby("spam")[col].apply(lambda x: (x>0).mean())
-   prop.plot(kind="bar")
-   plt.title(f"Proportion of Emails Containing {col}")
-   plt.show()
+    plt.figure()
+    prop = df.groupby("spam")[col].apply(lambda x: (x>0).mean())
+    prop.plot(kind="bar")
+    plt.title(f"Proportion of Emails Containing {col}")
+    plt.show()
+    plt.close()
 
 
 #Model Fitting
@@ -75,6 +78,9 @@ print("Precision:",precision_score(y_test,y_pred))
 print("Recall:",recall_score(y_test,y_pred))
 print("F1:",f1_score(y_test,y_pred))
 
+#Confusion Matrix 
+
+plt.figure()
 cm = confusion_matrix(y_test,y_pred)
 ConfusionMatrixDisplay(cm).plot()
 plt.savefig("/workspaces/math3180/midterm-project/results/confusion_matrix.png")
@@ -84,6 +90,7 @@ plt.close()
 y_prob = bnb.predict_proba(X_test)[:, 1]
 fpr, tpr, _ = roc_curve(y_test, y_prob)
 roc_auc = auc(fpr, tpr)
+plt.figure()
 plt.plot(fpr, tpr, label=f"AUC = {roc_auc:.2f}")
 plt.plot([0, 1], [0, 1], "k--")
 plt.xlabel("False Positive Rate")
@@ -94,6 +101,7 @@ plt.savefig("/workspaces/math3180/midterm-project/results/roc_curve.png")
 plt.close()
 
 # Precision-Recall Curve
+plt.figure()
 precision_vals, recall_vals, _ = precision_recall_curve(y_test, y_prob)
 plt.plot(recall_vals, precision_vals)
 plt.xlabel("Recall")
@@ -103,6 +111,7 @@ plt.savefig("/workspaces/math3180/midterm-project/results/precision_recall_curve
 plt.close()
 
 # Metrics Bar Chart
+plt.figure()
 metrics = {
     "Accuracy": accuracy_score(y_test, y_pred),
     "Precision": precision_score(y_test, y_pred),

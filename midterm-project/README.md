@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-
 # 📧 Spam Email Classification Using Bernoulli Naive Bayes
 
 Machine learning project for detecting spam emails using the **Spambase dataset** and the **Bernoulli Naive Bayes classification model**.

@@ -342,6 +342,7 @@ Example structure:
 | Luis Mendez | Data preprocessing and exploratory analysis      |
 | Student 2 | Mathematical background and model implementation |
 | Student 3 | Results interpretation and presentation          |
+| Luke Rigoglioso |  |
 
 ---
 

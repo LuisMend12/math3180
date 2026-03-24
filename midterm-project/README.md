@@ -453,5 +453,3 @@ source .venv/bin/activate
 jupyter lab
 ```
 
-Then open `midterm-project/First_Project_Assignment.ipynb`.
-

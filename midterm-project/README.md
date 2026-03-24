@@ -350,8 +350,8 @@ Example structure:
 * Scikit-learn Documentation
 * Machine Learning textbooks on Naive Bayes classification
 
+---
 
-=======
 # Spam Email Classification with Bernoulli Naive Bayes
 
 ## Mathematical Background
@@ -455,8 +455,3 @@ jupyter lab
 
 Then open `midterm-project/First_Project_Assignment.ipynb`.
 
-## References
-
-- UCI Machine Learning Repository: Spambase
-- scikit-learn documentation for `BernoulliNB`
->>>>>>> origin/newmodifications

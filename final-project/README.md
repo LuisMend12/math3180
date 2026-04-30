@@ -1,11 +1,13 @@
 # MathNet CNN — Math Problem Detection & Understanding
 
-A 1-D CNN classifier trained on the [ShadenA/MathNet](https://huggingface.co/datasets/ShadenA/MathNet) dataset to automatically detect and categorize math problems by topic.
+A multi-model classifier trained on the [ShadenA/MathNet](https://huggingface.co/datasets/ShadenA/MathNet) dataset to automatically detect and categorize math problems by topic. The notebook trains and compares three models: a text-based 1-D CNN, a pretrained EfficientNetB0, and a pretrained MobileNetV2-0.35 — all using TensorFlow/Keras.
 
 ## What it does
 
-- Loads the MathNet dataset from HuggingFace
-- Trains a text-based CNN to classify math problems across 10+ topic areas
+- Loads the MathNet dataset (parquet files) and filters to the top 10 countries by row count
+- Trains a **1-D CNN on problem text** (`problem_markdown`) to classify math topics
+- Trains **EfficientNetB0** and **MobileNetV2-0.35** (both frozen ImageNet bases) on the problem figures
+- Compares all three models side-by-side on parameter count and validation accuracy
 - Outputs the predicted topic and confidence score for any new problem you enter
 
 ## Supported Topics
@@ -30,7 +32,7 @@ A 1-D CNN classifier trained on the [ShadenA/MathNet](https://huggingface.co/dat
 |---|---|
 | `mathnet_cnn.ipynb` | Main notebook — data loading, training, evaluation, and inference |
 | `requirements.txt` | Python dependencies |
-| `saved_model/mathnet_cnn.pt` | Saved PyTorch model weights (generated after running the notebook) |
+| `saved_model/mathnet_cnn.keras` | Saved 1-D CNN model weights (generated after running the notebook) |
 | `saved_model/tokenizer.pkl` | Fitted tokenizer |
 | `saved_model/label_encoder.pkl` | Label encoder for topic names |
 
@@ -63,7 +65,7 @@ The notebook filters to the **top 10 countries** by row count to keep training f
 
 ## Requirements
 
-**Python 3.11 is required.** TensorFlow does not support Python 3.12+ on Windows, so this notebook uses PyTorch instead. Python 3.11 is the recommended version for full compatibility with all dependencies.
+**Python 3.11 is required.** TensorFlow 2.x does not support Python 3.12+ on Windows. Python 3.11 is the recommended version for full compatibility with all dependencies.
 
 Install dependencies:
 
@@ -83,6 +85,8 @@ print(result["top_3"])             # top 3 topic predictions with scores
 ```
 
 ## Model Architecture
+
+### Model 1 — 1-D CNN on text (primary model, used for `predict_topic`)
 
 ```
 Input (token sequence, max_len=128)
@@ -104,7 +108,37 @@ Input (token sequence, max_len=128)
 
 Six parallel Conv1D branches with kernel sizes 2–7 capture n-gram patterns of varying lengths. A global average pooling branch on the raw embedding provides softer contextual signal. The branches merge into a deep classification head with batch normalization and progressive dropout.
 
-**Training:** Adam (lr=1e-3), EarlyStopping (patience=3), ReduceLROnPlateau (factor=0.5, patience=2), up to 20 epochs, batch size 64.
+**Training:** Adam (lr=1e-3), EarlyStopping (patience=3), ReduceLROnPlateau (factor=0.5, patience=2), up to 60 epochs, batch size 64.
+
+### Model 2 — EfficientNetB0 on problem figures (large pretrained)
+
+ImageNet-pretrained EfficientNetB0 with its convolutional base frozen. A small classification head is trained on the problem figures extracted from the dataset.
+
+```
+Input (224×224×3 image)
+  └─ EfficientNetB0 base (frozen, ImageNet weights)
+       └─ GlobalAveragePooling2D → BN → Dense(256, relu) → Dropout(0.5)
+            └─ Dense(num_classes, softmax)
+```
+
+**Training:** Adam (lr=1e-3), EarlyStopping (patience=4), ReduceLROnPlateau (factor=0.5, patience=2), up to 15 epochs, batch size 32.
+
+### Model 3 — MobileNetV2-0.35 on problem figures (small pretrained)
+
+A compact MobileNetV2 (`alpha=0.35`, ~400K parameters) pretrained on ImageNet. The base is frozen; only the classification head trains.
+
+```
+Input (224×224×3 image)
+  └─ MobileNetV2-0.35 base (frozen, ImageNet weights)
+       └─ GlobalAveragePooling2D → BN → Dense(128, relu) → Dropout(0.4)
+            └─ Dense(num_classes, softmax)
+```
+
+**Training:** Adam (lr=1e-3), EarlyStopping (patience=4), ReduceLROnPlateau (factor=0.5, patience=2), up to 15 epochs, batch size 32.
+
+### Memory-efficient image pipeline
+
+All image preprocessing is done with a `tf.data.Dataset` pipeline that applies `preprocess_input` **per batch** instead of upfront, avoiding the allocation of a full ~6 GB preprocessed array in RAM. The raw decoded images (`X_img_train`, shape `[11079, 224, 224, 3]`) stay in memory once; preprocessing runs on the fly during training.
 
 ## Course
 

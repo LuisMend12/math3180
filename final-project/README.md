@@ -29,7 +29,8 @@ A 1-D CNN classifier trained on the [ShadenA/MathNet](https://huggingface.co/dat
 | File | Description |
 |---|---|
 | `mathnet_cnn.ipynb` | Main notebook — data loading, training, evaluation, and inference |
-| `saved_model/mathnet_cnn.keras` | Saved model (generated after running the notebook) |
+| `requirements.txt` | Python dependencies |
+| `saved_model/mathnet_cnn.pt` | Saved PyTorch model weights (generated after running the notebook) |
 | `saved_model/tokenizer.pkl` | Fitted tokenizer |
 | `saved_model/label_encoder.pkl` | Label encoder for topic names |
 
@@ -60,10 +61,14 @@ final-project/
 
 The notebook filters to the **top 10 countries** by row count to keep training fast. A bar chart of the selected countries is shown in cell 3 of the notebook.
 
-## Setup
+## Requirements
+
+**Python 3.11 is required.** TensorFlow does not support Python 3.12+ on Windows, so this notebook uses PyTorch instead. Python 3.11 is the recommended version for full compatibility with all dependencies.
+
+Install dependencies:
 
 ```bash
-pip install tensorflow matplotlib scikit-learn seaborn pandas numpy pyarrow
+pip install -r requirements.txt
 ```
 
 ## Usage

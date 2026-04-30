@@ -3,7 +3,12 @@
     "allow": [
       "Bash(C:/ProgramData/miniconda3/python.exe -m pip install pandas pyarrow -q)",
       "Bash(C:/ProgramData/miniconda3/python.exe -c ' *)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(conda env *)",
+      "Bash(py -0)",
+      "PowerShell(Get-PSDrive -PSProvider FileSystem | Select-Object Name, Root, @{N=\"Free\\(GB\\)\";E={[math]::Round\\($_.Free/1GB,1\\)}}, @{N=\"Used\\(GB\\)\";E={[math]::Round\\(\\($_.Used\\)/1GB,1\\)}})",
+      "PowerShell(Get-WmiObject Win32_LogicalDisk | Select-Object DeviceID, @{N=\"Free\\(GB\\)\";E={[math]::Round\\($_.FreeSpace/1GB,1\\)}}, @{N=\"Size\\(GB\\)\";E={[math]::Round\\($_.Size/1GB,1\\)}}, DriveType)",
+      "Bash(wmic logicaldisk *)"
     ]
   }
 }

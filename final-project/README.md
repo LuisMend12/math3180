@@ -33,10 +33,37 @@ A 1-D CNN classifier trained on the [ShadenA/MathNet](https://huggingface.co/dat
 | `saved_model/tokenizer.pkl` | Fitted tokenizer |
 | `saved_model/label_encoder.pkl` | Label encoder for topic names |
 
+## Getting the Data
+
+The notebook reads MathNet parquet files from a local `MathNet/` folder. Clone it from HuggingFace using `git lfs` (required for large files):
+
+```bash
+# Install git-lfs if you don't have it
+git lfs install
+
+# Clone the dataset into the final-project folder
+git clone https://huggingface.co/datasets/ShadenA/MathNet
+```
+
+After cloning, your directory should look like:
+
+```
+final-project/
+├── MathNet/
+│   └── data/
+│       └── all/
+│           ├── train-00000-of-XXXXX.parquet
+│           └── ...
+├── mathnet_cnn.ipynb
+└── README.md
+```
+
+The notebook filters to the **top 10 countries** by row count to keep training fast. A bar chart of the selected countries is shown in cell 3 of the notebook.
+
 ## Setup
 
 ```bash
-pip install datasets transformers torch torchvision matplotlib scikit-learn seaborn pandas numpy tensorflow
+pip install tensorflow matplotlib scikit-learn seaborn pandas numpy pyarrow
 ```
 
 ## Usage

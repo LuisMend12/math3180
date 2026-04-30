@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:/ProgramData/miniconda3/python.exe -m pip install pandas pyarrow -q)",
+      "Bash(C:/ProgramData/miniconda3/python.exe -c ' *)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}

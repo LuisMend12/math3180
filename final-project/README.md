@@ -4,27 +4,22 @@ A multi-model classifier trained on the [ShadenA/MathNet](https://huggingface.co
 
 ## What it does
 
-- Loads the MathNet dataset (parquet files) and filters to the top 10 countries by row count
+- Loads the MathNet dataset (parquet files) and filters to the top N countries by row count (default: 1 — United States, ~4,819 rows out of 27,817 total)
 - Trains a **1-D CNN on problem text** (`problem_markdown`) to classify math topics
 - Trains **EfficientNetB0** and **MobileNetV2-0.35** (both frozen ImageNet bases) on the problem figures
 - Compares all three models side-by-side on parameter count and validation accuracy
 - Outputs the predicted topic and confidence score for any new problem you enter
 
-## Supported Topics
+## Topics
 
-| Topic | Example Problems |
-|---|---|
-| Calculus | Derivatives, integrals, limits, series, ODEs |
-| Algebra | Quadratics, logarithms, systems of equations |
-| Geometry | Area, volume, surface area, similar figures |
-| Trigonometry | Identities, law of cosines, inverse trig |
-| Statistics & Probability | Distributions, hypothesis tests, regression |
-| Linear Algebra | Matrix ops, determinants, eigenvalues |
-| Number Theory | GCD, modular arithmetic, primes |
-| Differential Equations | First/second-order ODEs, IVPs |
-| Complex Numbers | Arithmetic, modulus, De Moivre's theorem |
-| Combinatorics | Permutations, combinations, pigeonhole |
-| Set Theory / Logic | Venn diagrams, proof by induction |
+The model classifies problems using the full hierarchical `topics_flat` labels from the MathNet dataset. With the default single-country filter there are **2,509 unique fine-grained topic strings**, such as:
+
+- `Algebra > Equations and Inequalities > QM-AM-GM-HM Inequalities`
+- `Geometry > Solid Geometry > Volume`
+- `Statistics > Probability > Counting Methods > Combinations`
+- `Number Theory > Divisibility / Factorization > Prime numbers`
+
+To increase variety and reduce the number of classes, increase `nlargest(N)` in cell 2 to include more countries.
 
 ## Files
 
@@ -61,7 +56,7 @@ final-project/
 └── README.md
 ```
 
-The notebook filters to the **top 10 countries** by row count to keep training fast. A bar chart of the selected countries is shown in cell 3 of the notebook.
+The notebook filters to the **top N countries** by row count to keep training fast. Change `nlargest(1)` in cell 2 to include more countries and more training data.
 
 ## Requirements
 
@@ -108,7 +103,7 @@ Input (token sequence, max_len=128)
 
 Six parallel Conv1D branches with kernel sizes 2–7 capture n-gram patterns of varying lengths. A global average pooling branch on the raw embedding provides softer contextual signal. The branches merge into a deep classification head with batch normalization and progressive dropout.
 
-**Training:** Adam (lr=1e-3), EarlyStopping (patience=3), ReduceLROnPlateau (factor=0.5, patience=2), up to 60 epochs, batch size 64.
+**Training:** Adam (lr=1e-4), EarlyStopping (patience=3), ReduceLROnPlateau (factor=0.5, patience=2), up to 60 epochs, batch size 64.
 
 ### Model 2 — EfficientNetB0 on problem figures (large pretrained)
 
@@ -121,7 +116,7 @@ Input (224×224×3 image)
             └─ Dense(num_classes, softmax)
 ```
 
-**Training:** Adam (lr=1e-3), EarlyStopping (patience=4), ReduceLROnPlateau (factor=0.5, patience=2), up to 15 epochs, batch size 32.
+**Training:** Adam (lr=1e-4), EarlyStopping (patience=4), ReduceLROnPlateau (factor=0.5, patience=2), up to 20 epochs, batch size 32.
 
 ### Model 3 — MobileNetV2-0.35 on problem figures (small pretrained)
 
@@ -134,7 +129,7 @@ Input (224×224×3 image)
             └─ Dense(num_classes, softmax)
 ```
 
-**Training:** Adam (lr=1e-3), EarlyStopping (patience=4), ReduceLROnPlateau (factor=0.5, patience=2), up to 15 epochs, batch size 32.
+**Training:** Adam (lr=1e-4), EarlyStopping (patience=4), ReduceLROnPlateau (factor=0.5, patience=2), up to 20 epochs, batch size 32.
 
 ### Memory-efficient image pipeline
 

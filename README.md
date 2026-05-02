@@ -1,28 +1,28 @@
 # MATH 3180 - Mathematics for Machine Learning
 
-This repository contains two machine learning projects developed for MATH 3180.
-Both projects connect mathematical modeling ideas from the course with working
-Python implementations, evaluation metrics, and reproducible notebooks.
+This repository contains two machine learning projects for MATH 3180. Each
+project includes a notebook, dataset files or dataset instructions, model
+training code, evaluation metrics, and a project-specific README.
 
 ## Projects
 
-| Folder | Notebook | Topic |
-|---|---|---|
-| `midterm-project/` | `First_Project_Assignment.ipynb` | Spam email classification with Bernoulli Naive Bayes |
-| `final-project/` | `mathnet_cnn.ipynb` | Math problem topic classification with text models |
+| Project | Folder | Main Notebook | Task | Best Saved Result |
+|---|---|---|---|---:|
+| Midterm Project | `midterm-project/` | `First_Project_Assignment.ipynb` | Spam email classification | 90.37% test accuracy |
+| Final Project | `final-project/` | `mathnet_cnn.ipynb` | Math problem topic classification | 85.75% validation accuracy |
 
-## Midterm Project: Spam Email Classification
+## Project 1: Spam Email Classification
 
 The midterm project uses the UCI Spambase dataset to classify emails as spam or
-not spam. The notebook converts numerical email features into binary indicators
-and evaluates several Bernoulli Naive Bayes pipelines.
+not spam. The model converts numerical email features into binary indicators and
+uses Bernoulli Naive Bayes to estimate whether a message is spam.
 
-Main ideas covered:
+Main topics:
 
 - Bernoulli Naive Bayes classification
 - Bayes' rule and log-posterior scoring
 - Binary feature transformations
-- Train/test splitting with stratification
+- Stratified train/test splitting
 - Threshold tuning and ablation experiments
 - Accuracy, precision, recall, F1, ROC-AUC, and confusion matrices
 
@@ -34,15 +34,16 @@ Latest saved experiment summary:
 
 Important files:
 
-- `midterm-project/First_Project_Assignment.ipynb`: notebook version of the experiment suite
-- `midterm-project/main.py`: script version of the experiment suite
+- `midterm-project/README.md`: detailed project writeup
+- `midterm-project/First_Project_Assignment.ipynb`: notebook version
+- `midterm-project/main.py`: script version
 - `midterm-project/spambase/spambase.data`: dataset
-- `midterm-project/results/`: generated summaries, plots, and feature log-odds
+- `midterm-project/results/`: saved plots, summaries, and metrics
 
-## Final Project: MathNet Topic Classification
+## Project 2: MathNet Topic Classification
 
-The final project uses the `ShadenA/MathNet` olympiad-style math problem dataset
-to classify problem statements into four broad topics:
+The final project uses the `ShadenA/MathNet` olympiad-style math problem
+dataset to classify problem statements into four broad topics:
 
 - Algebra
 - Combinatorics
@@ -50,9 +51,9 @@ to classify problem statements into four broad topics:
 - Number Theory
 
 The notebook loads MathNet parquet shards, maps detailed topic labels into the
-four topic groups, trains multiple text classifiers, compares validation
-performance, tests predictions on hand-written examples, and saves the CNN model
-artifacts for later inference.
+four broad groups, compares several text classification models, evaluates
+validation performance, tests hand-written examples, and saves CNN inference
+artifacts.
 
 Models compared:
 
@@ -65,22 +66,17 @@ Models compared:
 | Sentence-BERT + Logistic Regression | 84.49% |
 | 1D CNN | 83.70% |
 
-The strongest saved result is the TF-IDF Ridge baseline. The notebook also
-includes pretrained Sentence-BERT embeddings through the `sentence-transformers`
-dependency.
-
 Important files:
 
-- `final-project/mathnet_cnn.ipynb`: main final project notebook
-- `final-project/README.md`: detailed final project writeup
+- `final-project/README.md`: detailed project writeup
+- `final-project/mathnet_cnn.ipynb`: main notebook
 - `final-project/requirements.txt`: final project dependencies
 - `final-project/mathnet_dataset.json`: local dataset reference/export
 - `final-project/MathNet/`: local MathNet dataset clone
 
 ## Setup
 
-Create and activate a Python environment, then install dependencies for the
-project you want to run.
+Create and activate a Python environment:
 
 ```bash
 python -m venv .venv
@@ -92,17 +88,27 @@ On Windows PowerShell:
 .\.venv\Scripts\Activate.ps1
 ```
 
-For the midterm project:
+Install dependencies for the project you want to run.
+
+Midterm project:
 
 ```bash
 pip install -r midterm-project/requirements.txt
 ```
 
-For the final project:
+Final project:
 
 ```bash
 pip install -r final-project/requirements.txt
 pip install tensorflow keras tf-keras
+```
+
+If the MathNet dataset is not already present, clone it into `final-project/`:
+
+```bash
+cd final-project
+git lfs install
+git clone https://huggingface.co/datasets/ShadenA/MathNet
 ```
 
 ## How To Run
@@ -113,7 +119,7 @@ Run the midterm script from the repository root:
 python midterm-project/main.py
 ```
 
-Or open either notebook in Jupyter:
+Or open the notebooks in Jupyter:
 
 ```bash
 jupyter lab
@@ -124,42 +130,34 @@ Then open:
 - `midterm-project/First_Project_Assignment.ipynb`
 - `final-project/mathnet_cnn.ipynb`
 
-If the MathNet dataset is not present for the final project, clone it into
-`final-project/`:
-
-```bash
-cd final-project
-git lfs install
-git clone https://huggingface.co/datasets/ShadenA/MathNet
-```
-
 ## Repository Structure
 
 ```text
 .
-├── README.md
-├── midterm-project/
-│   ├── First_Project_Assignment.ipynb
-│   ├── README.md
-│   ├── main.py
-│   ├── requirements.txt
-│   ├── spambase/
-│   └── results/
-└── final-project/
-    ├── mathnet_cnn.ipynb
-    ├── README.md
-    ├── requirements.txt
-    ├── mathnet_dataset.json
-    └── MathNet/
+|-- README.md
+|-- midterm-project/
+|   |-- README.md
+|   |-- First_Project_Assignment.ipynb
+|   |-- main.py
+|   |-- requirements.txt
+|   |-- spambase/
+|   `-- results/
+`-- final-project/
+    |-- README.md
+    |-- mathnet_cnn.ipynb
+    |-- requirements.txt
+    |-- mathnet_dataset.json
+    `-- MathNet/
 ```
 
 ## Course Themes
 
-These projects apply several mathematical foundations of machine learning:
+Across the two projects, the repository applies several mathematical foundations
+of machine learning:
 
 - Probability and conditional modeling
 - Linear classification
+- Feature engineering
 - Regularization
 - Optimization
-- Feature engineering
 - Model evaluation and comparison

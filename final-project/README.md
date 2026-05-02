@@ -126,6 +126,25 @@ Saved validation results from the notebook:
 | SBERT + Logistic Regression | 84.49% | 83.41% | 83.37% | 83.37% |
 | 1D CNN from scratch | 83.70% | 82.39% | 82.90% | 82.41% |
 
+## Model Parameter Counts
+
+| Model | Parameters |
+|---|---:|
+| TF-IDF + Ridge | 80,004 |
+| TF-IDF + Linear SVM | 80,004 |
+| TF-IDF + Logistic Regression | 80,004 |
+| Transformer from scratch | 2,841,988 |
+| SBERT + Logistic Regression | 1,540 classifier params, plus ~22M frozen SBERT params |
+| 1D CNN from scratch | 3,395,588 total, 3,392,516 trainable |
+
+The TF-IDF linear baselines use 20,000 TF-IDF features and 4 classes, giving
+`20,000 * 4 + 4 = 80,004` learned classifier parameters. The SBERT Logistic
+Regression head uses 384-dimensional sentence embeddings and 4 classes, giving
+`384 * 4 + 4 = 1,540` learned classifier parameters. The pretrained
+`all-MiniLM-L6-v2` encoder is frozen during this experiment and contributes
+about 22M pretrained parameters. The CNN and Transformer counts are taken from
+the Keras model summaries saved in the notebook output.
+
 ## Example CNN Predictions
 
 The notebook tests the saved CNN inference helper on hand-written math

@@ -57,14 +57,25 @@ artifacts.
 
 Models compared:
 
-| Model | Validation Accuracy |
-|---|---:|
-| TF-IDF + Ridge Classifier | 85.75% |
-| TF-IDF + Linear SVM | 85.46% |
-| TF-IDF + Logistic Regression | 85.22% |
-| Lightweight Transformer Encoder | 84.62% |
-| Sentence-BERT + Logistic Regression | 84.49% |
-| 1D CNN | 83.70% |
+| Model | Validation Accuracy | Parameters |
+|---|---:|---:|
+| TF-IDF + Ridge Classifier | 85.75% | 80,004 |
+| TF-IDF + Linear SVM | 85.46% | 80,004 |
+| TF-IDF + Logistic Regression | 85.22% | 80,004 |
+| Lightweight Transformer Encoder | 84.62% | 2,841,988 |
+| Sentence-BERT + Logistic Regression | 84.49% | 1,540 classifier params, plus ~22M frozen SBERT params |
+| 1D CNN | 83.70% | 3,395,588 total, 3,392,516 trainable |
+
+Parameter-count notes:
+
+- The midterm Bernoulli Naive Bayes model has 116 learned parameters: 2 class
+  log priors plus 57 feature log probabilities for each of 2 classes.
+- The TF-IDF linear baselines use 20,000 TF-IDF features and 4 output classes,
+  so each classifier has `20,000 * 4 + 4 = 80,004` learned weights/biases.
+- The Sentence-BERT classifier head uses 384-dimensional embeddings and 4
+  classes, so the Logistic Regression head has `384 * 4 + 4 = 1,540`
+  learned parameters. The pretrained `all-MiniLM-L6-v2` encoder is frozen and
+  contributes about 22M pretrained parameters.
 
 Important files:
 

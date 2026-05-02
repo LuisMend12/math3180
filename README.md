@@ -56,11 +56,18 @@ artifacts for later inference.
 
 Models compared:
 
-| Model | Best Validation Accuracy |
+| Model | Validation Accuracy |
 |---|---:|
 | TF-IDF + Ridge Classifier | 85.75% |
-| 1D CNN | 83.17% |
-| Lightweight Transformer Encoder | 85.40% |
+| TF-IDF + Linear SVM | 85.46% |
+| TF-IDF + Logistic Regression | 85.22% |
+| Lightweight Transformer Encoder | 84.62% |
+| Sentence-BERT + Logistic Regression | 84.49% |
+| 1D CNN | 83.70% |
+
+The strongest saved result is the TF-IDF Ridge baseline. The notebook also
+includes pretrained Sentence-BERT embeddings through the `sentence-transformers`
+dependency.
 
 Important files:
 

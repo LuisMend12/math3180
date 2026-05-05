@@ -1,0 +1,74 @@
+{
+  "checkpoint": "runs/tiny_mathnet_grokking/checkpoints/finetune_best.pt",
+  "confusion_matrix": [
+    [
+      644,
+      61,
+      15,
+      66
+    ],
+    [
+      45,
+      474,
+      29,
+      39
+    ],
+    [
+      16,
+      27,
+      788,
+      1
+    ],
+    [
+      40,
+      55,
+      5,
+      419
+    ]
+  ],
+  "metrics": {
+    "accuracy": 0.8535242290748899,
+    "loss": 0.42253797749678296,
+    "macro_f1": 0.8439039068545436
+  },
+  "report": {
+    "Algebra": {
+      "f1-score": 0.8412802090137165,
+      "precision": 0.8644295302013423,
+      "recall": 0.8193384223918575,
+      "support": 786.0
+    },
+    "Combinatorics": {
+      "f1-score": 0.7873754152823921,
+      "precision": 0.7682333873581848,
+      "recall": 0.807495741056218,
+      "support": 587.0
+    },
+    "Geometry": {
+      "f1-score": 0.9442780107849011,
+      "precision": 0.9414575866188769,
+      "recall": 0.9471153846153846,
+      "support": 832.0
+    },
+    "Number Theory": {
+      "f1-score": 0.8026819923371648,
+      "precision": 0.7980952380952381,
+      "recall": 0.8073217726396917,
+      "support": 519.0
+    },
+    "accuracy": 0.8535242290748899,
+    "macro avg": {
+      "f1-score": 0.8439039068545436,
+      "precision": 0.8430539355684106,
+      "recall": 0.845317830175788,
+      "support": 2724.0
+    },
+    "weighted avg": {
+      "f1-score": 0.8537690426033668,
+      "precision": 0.8545883809676372,
+      "recall": 0.8535242290748899,
+      "support": 2724.0
+    }
+  },
+  "split": "test"
+}

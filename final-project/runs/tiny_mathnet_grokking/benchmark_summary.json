@@ -1,0 +1,121 @@
+{
+  "dataloader": {
+    "backend": "torch_dataloader",
+    "batch_size": 512,
+    "results": [
+      {
+        "elapsed_s": 0.02279166699736379,
+        "num_workers": 0,
+        "ok": true,
+        "samples_per_s": 179714.8054362924
+      },
+      {
+        "num_workers": 2,
+        "ok": false,
+        "reason": "macOS multiprocessing spawn is not used for the main path; device-resident batches are faster and avoid worker stalls",
+        "skipped": true
+      },
+      {
+        "num_workers": 4,
+        "ok": false,
+        "reason": "macOS multiprocessing spawn is not used for the main path; device-resident batches are faster and avoid worker stalls",
+        "skipped": true
+      },
+      {
+        "num_workers": 8,
+        "ok": false,
+        "reason": "macOS multiprocessing spawn is not used for the main path; device-resident batches are faster and avoid worker stalls",
+        "skipped": true
+      }
+    ]
+  },
+  "mlx": {
+    "backend": "mlx",
+    "batch_size": 512,
+    "elapsed_s": 7.505304916994646,
+    "last_loss": 1.3700062036514282,
+    "ok": true,
+    "samples_per_s": 682.1841426331023,
+    "step_s": 0.7505304916994646,
+    "steps": 10,
+    "tokens_per_s": 174639.14051407418
+  },
+  "tiny_overfit": {
+    "accuracy": 1.0,
+    "batch_size": 64,
+    "loss": 3.232743983971886e-05,
+    "macro_f1": 1.0,
+    "steps": 120
+  },
+  "torch": {
+    "amp": false,
+    "backend": "torch",
+    "best": {
+      "batch_size": 512,
+      "elapsed_s": 10.20758395899611,
+      "last_loss": 7.543945789337158,
+      "ok": true,
+      "samples_per_s": 401.2702728141783,
+      "step_s": 1.2759479948745138,
+      "steps": 8,
+      "tokens_per_s": 102725.18984042965
+    },
+    "device": "mps",
+    "memory": {
+      "rss": 1153826816
+    },
+    "params": 656324,
+    "results": [
+      {
+        "batch_size": 64,
+        "elapsed_s": 2.097473665999132,
+        "last_loss": 7.599643230438232,
+        "ok": true,
+        "samples_per_s": 244.10318389199352,
+        "step_s": 0.2621842082498915,
+        "steps": 8,
+        "tokens_per_s": 62490.41507635034
+      },
+      {
+        "batch_size": 128,
+        "elapsed_s": 3.1919094160111854,
+        "last_loss": 7.603436470031738,
+        "ok": true,
+        "samples_per_s": 320.81110913218083,
+        "step_s": 0.3989886770013982,
+        "steps": 8,
+        "tokens_per_s": 82127.6439378383
+      },
+      {
+        "batch_size": 256,
+        "elapsed_s": 5.461709042006987,
+        "last_loss": 7.580256938934326,
+        "ok": true,
+        "samples_per_s": 374.9742039073234,
+        "step_s": 0.6827136302508734,
+        "steps": 8,
+        "tokens_per_s": 95993.39620027479
+      },
+      {
+        "batch_size": 384,
+        "elapsed_s": 7.8002254589955555,
+        "last_loss": 7.536417007446289,
+        "ok": true,
+        "samples_per_s": 393.8347700523499,
+        "step_s": 0.9750281823744444,
+        "steps": 8,
+        "tokens_per_s": 100821.70113340157
+      },
+      {
+        "batch_size": 512,
+        "elapsed_s": 10.20758395899611,
+        "last_loss": 7.543945789337158,
+        "ok": true,
+        "samples_per_s": 401.2702728141783,
+        "step_s": 1.2759479948745138,
+        "steps": 8,
+        "tokens_per_s": 102725.18984042965
+      }
+    ]
+  }
+}

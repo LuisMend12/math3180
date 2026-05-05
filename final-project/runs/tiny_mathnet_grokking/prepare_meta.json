@@ -1,0 +1,63 @@
+{
+  "data_path": "mathnet_dataset.json",
+  "label_counts": {
+    "Algebra": 7859,
+    "Combinatorics": 5864,
+    "Geometry": 8313,
+    "Number Theory": 5195
+  },
+  "max_len": 256,
+  "model_config": {
+    "cls_id": 2,
+    "d_model": 96,
+    "dropout": 0.15,
+    "ff_dim": 192,
+    "mask_id": 4,
+    "max_len": 256,
+    "n_heads": 4,
+    "n_layers": 3,
+    "num_classes": 4,
+    "pad_id": 0,
+    "sep_id": 3,
+    "vocab_size": 4096
+  },
+  "seed": 42,
+  "special_ids": {
+    "[CLS]": 2,
+    "[MASK]": 4,
+    "[PAD]": 0,
+    "[SEP]": 3,
+    "[UNK]": 1
+  },
+  "splits": {
+    "test": {
+      "counts": {
+        "Algebra": 786,
+        "Combinatorics": 587,
+        "Geometry": 832,
+        "Number Theory": 519
+      },
+      "size": 2724
+    },
+    "train": {
+      "counts": {
+        "Algebra": 6287,
+        "Combinatorics": 4691,
+        "Geometry": 6650,
+        "Number Theory": 4156
+      },
+      "size": 21784
+    },
+    "val": {
+      "counts": {
+        "Algebra": 786,
+        "Combinatorics": 586,
+        "Geometry": 831,
+        "Number Theory": 520
+      },
+      "size": 2723
+    }
+  },
+  "vocab_size_actual": 4096,
+  "vocab_size_requested": 4096
+}

@@ -1,0 +1,30 @@
+{
+  "backend": "torch_dataloader",
+  "batch_size": 512,
+  "results": [
+    {
+      "elapsed_s": 0.02279166699736379,
+      "num_workers": 0,
+      "ok": true,
+      "samples_per_s": 179714.8054362924
+    },
+    {
+      "num_workers": 2,
+      "ok": false,
+      "reason": "macOS multiprocessing spawn is not used for the main path; device-resident batches are faster and avoid worker stalls",
+      "skipped": true
+    },
+    {
+      "num_workers": 4,
+      "ok": false,
+      "reason": "macOS multiprocessing spawn is not used for the main path; device-resident batches are faster and avoid worker stalls",
+      "skipped": true
+    },
+    {
+      "num_workers": 8,
+      "ok": false,
+      "reason": "macOS multiprocessing spawn is not used for the main path; device-resident batches are faster and avoid worker stalls",
+      "skipped": true
+    }
+  ]
+}

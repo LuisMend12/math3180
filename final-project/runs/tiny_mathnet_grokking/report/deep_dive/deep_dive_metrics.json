@@ -1,0 +1,449 @@
+{
+  "calibration_bins": [
+    {
+      "accuracy": NaN,
+      "bin_high": 0.06666666666666667,
+      "bin_low": 0.0,
+      "confidence": NaN,
+      "count": 0
+    },
+    {
+      "accuracy": NaN,
+      "bin_high": 0.13333333333333333,
+      "bin_low": 0.06666666666666667,
+      "confidence": NaN,
+      "count": 0
+    },
+    {
+      "accuracy": NaN,
+      "bin_high": 0.2,
+      "bin_low": 0.13333333333333333,
+      "confidence": NaN,
+      "count": 0
+    },
+    {
+      "accuracy": NaN,
+      "bin_high": 0.26666666666666666,
+      "bin_low": 0.2,
+      "confidence": NaN,
+      "count": 0
+    },
+    {
+      "accuracy": 0.0,
+      "bin_high": 0.3333333333333333,
+      "bin_low": 0.26666666666666666,
+      "confidence": 0.30880945920944214,
+      "count": 1
+    },
+    {
+      "accuracy": 0.42857142857142855,
+      "bin_high": 0.4,
+      "bin_low": 0.3333333333333333,
+      "confidence": 0.37326571345329285,
+      "count": 7
+    },
+    {
+      "accuracy": 0.44,
+      "bin_high": 0.4666666666666667,
+      "bin_low": 0.4,
+      "confidence": 0.4443525969982147,
+      "count": 25
+    },
+    {
+      "accuracy": 0.5428571428571428,
+      "bin_high": 0.5333333333333333,
+      "bin_low": 0.4666666666666667,
+      "confidence": 0.5025531053543091,
+      "count": 70
+    },
+    {
+      "accuracy": 0.5411764705882353,
+      "bin_high": 0.6,
+      "bin_low": 0.5333333333333333,
+      "confidence": 0.5693430304527283,
+      "count": 85
+    },
+    {
+      "accuracy": 0.6363636363636364,
+      "bin_high": 0.6666666666666666,
+      "bin_low": 0.6,
+      "confidence": 0.6350938081741333,
+      "count": 88
+    },
+    {
+      "accuracy": 0.580952380952381,
+      "bin_high": 0.7333333333333333,
+      "bin_low": 0.6666666666666666,
+      "confidence": 0.6995326280593872,
+      "count": 105
+    },
+    {
+      "accuracy": 0.6422764227642277,
+      "bin_high": 0.8,
+      "bin_low": 0.7333333333333333,
+      "confidence": 0.7676836252212524,
+      "count": 123
+    },
+    {
+      "accuracy": 0.7329192546583851,
+      "bin_high": 0.8666666666666667,
+      "bin_low": 0.8,
+      "confidence": 0.835332453250885,
+      "count": 161
+    },
+    {
+      "accuracy": 0.8379204892966361,
+      "bin_high": 0.9333333333333333,
+      "bin_low": 0.8666666666666667,
+      "confidence": 0.9062841534614563,
+      "count": 327
+    },
+    {
+      "accuracy": 0.9549653579676675,
+      "bin_high": 1.0,
+      "bin_low": 0.9333333333333333,
+      "confidence": 0.9692750573158264,
+      "count": 1732
+    }
+  ],
+  "feature_stats": [
+    {
+      "algebra_cue_rate": 0.544529262086514,
+      "category": "Algebra",
+      "combinatorics_cue_rate": 0.15776081424936386,
+      "geometry_cue_rate": 0.029262086513994912,
+      "image_metadata_rate": 0.020356234096692113,
+      "median_bpe_tokens": 89.0,
+      "median_chars": 210.5,
+      "median_word_tokens": 66.0,
+      "n": 786,
+      "number_theory_cue_rate": 0.26208651399491095,
+      "problem_markdown_image_rate": 0.007633587786259542,
+      "truncated_rate": 0.026717557251908396
+    },
+    {
+      "algebra_cue_rate": 0.19250425894378195,
+      "category": "Combinatorics",
+      "combinatorics_cue_rate": 0.4889267461669506,
+      "geometry_cue_rate": 0.23850085178875638,
+      "image_metadata_rate": 0.15332197614991483,
+      "median_bpe_tokens": 114.0,
+      "median_chars": 359.0,
+      "median_word_tokens": 80.0,
+      "n": 587,
+      "number_theory_cue_rate": 0.29982964224872233,
+      "problem_markdown_image_rate": 0.044293015332197615,
+      "truncated_rate": 0.08858603066439523
+    },
+    {
+      "algebra_cue_rate": 0.055288461538461536,
+      "category": "Geometry",
+      "combinatorics_cue_rate": 0.10096153846153846,
+      "geometry_cue_rate": 0.8088942307692307,
+      "image_metadata_rate": 0.5,
+      "median_bpe_tokens": 103.5,
+      "median_chars": 307.0,
+      "median_word_tokens": 83.0,
+      "n": 832,
+      "number_theory_cue_rate": 0.05889423076923077,
+      "problem_markdown_image_rate": 0.07572115384615384,
+      "truncated_rate": 0.02403846153846154
+    },
+    {
+      "algebra_cue_rate": 0.2581888246628131,
+      "category": "Number Theory",
+      "combinatorics_cue_rate": 0.13102119460500963,
+      "geometry_cue_rate": 0.08092485549132948,
+      "image_metadata_rate": 0.01348747591522158,
+      "median_bpe_tokens": 64.0,
+      "median_chars": 186.0,
+      "median_word_tokens": 50.0,
+      "n": 519,
+      "number_theory_cue_rate": 0.6878612716763006,
+      "problem_markdown_image_rate": 0.0,
+      "truncated_rate": 0.009633911368015413
+    }
+  ],
+  "long_joint_summary": {
+    "avg_tokens_per_s": 112199.04862545841,
+    "best": {
+      "elapsed_s": 168.91482054200605,
+      "epoch": 3,
+      "lr": 9.996513253379996e-05,
+      "memory": {
+        "rss": 1749565440
+      },
+      "mps_memory": {
+        "current_allocated_memory": 120625664,
+        "driver_allocated_memory": 6872006656
+      },
+      "params": 656324,
+      "phase": "long_joint",
+      "samples_per_s": 388.1816140880587,
+      "tokens_per_s": 99374.49320654303,
+      "train_loss": 1.539277195930481,
+      "val_accuracy": 0.8641204553800955,
+      "val_loss": 0.41134353659369727,
+      "val_macro_f1": 0.8541310820403385
+    },
+    "epochs": 200,
+    "final": {
+      "elapsed_s": 10321.537008625004,
+      "epoch": 200,
+      "lr": 1e-05,
+      "memory": {
+        "rss": 1477918720
+      },
+      "mps_memory": {
+        "current_allocated_memory": 120625664,
+        "driver_allocated_memory": 8086568960
+      },
+      "params": 656324,
+      "phase": "long_joint",
+      "samples_per_s": 481.269856490416,
+      "tokens_per_s": 123205.08326154649,
+      "train_loss": 1.2968193292617798,
+      "val_accuracy": 0.8497980168931326,
+      "val_loss": 0.5195325829766013,
+      "val_macro_f1": 0.8393542653647215
+    }
+  },
+  "mlm_masked_token": {
+    "masked_tokens": 42546.0,
+    "mlm_accuracy": 0.22885817703191838,
+    "mlm_loss": 4.297503478771506,
+    "mlm_perplexity": 73.51603008042129
+  },
+  "model_comparison": [
+    {
+      "accuracy": 0.8568281938325991,
+      "checkpoint": "supervised_best",
+      "loss": 0.4185381432374318,
+      "macro_f1": 0.8475294845810952
+    },
+    {
+      "accuracy": 0.8535242290748899,
+      "checkpoint": "finetune_best",
+      "loss": 0.42253797749678296,
+      "macro_f1": 0.8439039068545436
+    },
+    {
+      "accuracy": 0.8593979441997063,
+      "checkpoint": "joint_best",
+      "loss": 0.424973006049792,
+      "macro_f1": 0.8490416886909877
+    },
+    {
+      "accuracy": 0.8590308370044053,
+      "checkpoint": "long_joint_best",
+      "loss": 0.4331231862306595,
+      "macro_f1": 0.8485199882432678
+    }
+  ],
+  "overall": {
+    "accuracy": 0.8590308370044053,
+    "balanced_accuracy": 0.8486729895145317,
+    "classification_perplexity": 1.5372003815423647,
+    "cohen_kappa": 0.809792862868207,
+    "ece_15_bins": 0.03584280607896402,
+    "log_loss": 0.4299628279145871,
+    "macro_f1": 0.8485199882432678,
+    "macro_pr_auc_ovr": 0.897487588016864,
+    "macro_roc_auc_ovr": 0.9631333256957832,
+    "matthews_corrcoef": 0.8100866078605118,
+    "mean_confidence": 0.8924359679222107,
+    "mean_confidence_correct": 0.9150183796882629,
+    "mean_confidence_wrong": 0.7548244595527649,
+    "micro_f1": 0.8590308370044053,
+    "weighted_f1": 0.8593743355320437,
+    "weighted_roc_auc_ovr": 0.9653357996469811
+  },
+  "per_class": [
+    {
+      "accuracy_recall": 0.8358778625954199,
+      "brier_ovr": 0.0669960007071495,
+      "category": "Algebra",
+      "classification_perplexity": 1.6438830607723902,
+      "correct": 657,
+      "f1": 0.845016077170418,
+      "mean_ce_loss": 0.497061163187027,
+      "mean_confidence": 0.8858875036239624,
+      "mean_entropy": 0.35905197262763977,
+      "mean_margin": 0.8018205165863037,
+      "mean_true_probability": 0.7850382328033447,
+      "pr_auc_ovr": 0.9124089852802509,
+      "precision": 0.8543563068920677,
+      "predicted_count": 769,
+      "roc_auc_ovr": 0.9550381154202675,
+      "support": 786
+    },
+    {
+      "accuracy_recall": 0.8330494037478705,
+      "brier_ovr": 0.07084448635578156,
+      "category": "Combinatorics",
+      "classification_perplexity": 1.7028200845429637,
+      "correct": 489,
+      "f1": 0.7970660146699267,
+      "mean_ce_loss": 0.532285749912262,
+      "mean_confidence": 0.8622451424598694,
+      "mean_entropy": 0.39853140711784363,
+      "mean_margin": 0.7623561024665833,
+      "mean_true_probability": 0.7640670537948608,
+      "pr_auc_ovr": 0.8265010284181585,
+      "precision": 0.7640625,
+      "predicted_count": 640,
+      "roc_auc_ovr": 0.9484653851703456,
+      "support": 587
+    },
+    {
+      "accuracy_recall": 0.953125,
+      "brier_ovr": 0.021704403683543205,
+      "category": "Geometry",
+      "classification_perplexity": 1.1746624043349376,
+      "correct": 793,
+      "f1": 0.9571514785757392,
+      "mean_ce_loss": 0.16098079085350037,
+      "mean_confidence": 0.9448775053024292,
+      "mean_entropy": 0.2115769386291504,
+      "mean_margin": 0.9088150262832642,
+      "mean_true_probability": 0.9179149270057678,
+      "pr_auc_ovr": 0.9831173574831935,
+      "precision": 0.9612121212121212,
+      "predicted_count": 825,
+      "roc_auc_ovr": 0.9923933261505936,
+      "support": 832
+    },
+    {
+      "accuracy_recall": 0.7726396917148363,
+      "brier_ovr": 0.05755158141255379,
+      "category": "Number Theory",
+      "classification_perplexity": 1.9037332537377076,
+      "correct": 401,
+      "f1": 0.7948463825569871,
+      "mean_ce_loss": 0.6438168287277222,
+      "mean_confidence": 0.8524314165115356,
+      "mean_entropy": 0.43200260400772095,
+      "mean_margin": 0.7428834438323975,
+      "mean_true_probability": 0.7200445532798767,
+      "pr_auc_ovr": 0.8679229808858528,
+      "precision": 0.8183673469387756,
+      "predicted_count": 490,
+      "roc_auc_ovr": 0.9566364760419261,
+      "support": 519
+    }
+  ],
+  "plots": [
+    "model_comparison.png",
+    "per_category_scores.png",
+    "confusion_matrix.png",
+    "loss_ppl_confidence.png",
+    "confidence_histogram.png",
+    "calibration_curve.png",
+    "roc_curves.png",
+    "pr_curves.png",
+    "cue_rates.png",
+    "text_length_and_markup.png",
+    "long_joint_training_curve.png"
+  ],
+  "prediction_tables": {
+    "high_confidence_errors_csv": "runs/tiny_mathnet_grokking/report/deep_dive/high_confidence_errors.csv",
+    "predictions_csv": "runs/tiny_mathnet_grokking/report/deep_dive/test_predictions.csv"
+  },
+  "tfidf_baseline": {
+    "Algebra_accuracy": 0.8486005089058524,
+    "Combinatorics_accuracy": 0.82793867120954,
+    "Geometry_accuracy": 0.9350961538461539,
+    "Number Theory_accuracy": 0.7822736030828517,
+    "overall_accuracy": 0.8579295154185022
+  },
+  "top_words": {
+    "Algebra": [
+      "convergent",
+      "poenostavi",
+      "invertible",
+      "commutative",
+      "funktionen",
+      "funciones",
+      "funkcija",
+      "continuous",
+      "roots",
+      "realna",
+      "functies",
+      "ecuaciones",
+      "realni",
+      "composition",
+      "derivative",
+      "evrov",
+      "yf",
+      "polynomials",
+      "real",
+      "reals"
+    ],
+    "Combinatorics": [
+      "cities",
+      "flights",
+      "loses",
+      "colorings",
+      "flight",
+      "colonne",
+      "roads",
+      "tournament",
+      "making",
+      "vertically",
+      "dominoes",
+      "colouring",
+      "caselle",
+      "knight",
+      "chess",
+      "colours",
+      "neighbours",
+      "winning",
+      "balance",
+      "friendship"
+    ],
+    "Geometry": [
+      "circumcircle",
+      "circumcenter",
+      "tangent",
+      "incircle",
+      "incenter",
+      "orthocenter",
+      "bisector",
+      "altitude",
+      "perp",
+      "altitudes",
+      "circumcircles",
+      "acb",
+      "bac",
+      "bisectors",
+      "widehat",
+      "tangents",
+      "cp",
+      "ae",
+      "concyclic",
+      "circumscribed"
+    ],
+    "Number Theory": [
+      "lcm",
+      "primzahl",
+      "divisors",
+      "premiers",
+      "divisori",
+      "deler",
+      "parfait",
+      "divisores",
+      "popoln",
+      "january",
+      "deljiva",
+      "kgv",
+      "diviseurs",
+      "primes",
+      "overbrace",
+      "divisant",
+      "deixa",
+      "totient",
+      "delers",
+      "divisor"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cls_id": 2,
+  "d_model": 96,
+  "dropout": 0.15,
+  "ff_dim": 192,
+  "mask_id": 4,
+  "max_len": 256,
+  "n_heads": 4,
+  "n_layers": 3,
+  "num_classes": 4,
+  "pad_id": 0,
+  "sep_id": 3,
+  "vocab_size": 4096
+}

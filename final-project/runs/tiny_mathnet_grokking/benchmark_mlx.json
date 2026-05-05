@@ -1,0 +1,11 @@
+{
+  "backend": "mlx",
+  "batch_size": 512,
+  "elapsed_s": 7.505304916994646,
+  "last_loss": 1.3700062036514282,
+  "ok": true,
+  "samples_per_s": 682.1841426331023,
+  "step_s": 0.7505304916994646,
+  "steps": 10,
+  "tokens_per_s": 174639.14051407418
+}

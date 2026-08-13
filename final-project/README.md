@@ -36,6 +36,23 @@ features are very competitive for this topic classification task.
 | `mathnet_dataset.json` | Local dataset reference/export |
 | `MathNet/` | Local clone of the MathNet dataset from Hugging Face |
 | `saved_model/` | Generated after running the notebook; contains the saved CNN, tokenizer, and label encoder |
+| `human_eval/` | Blind human-review protocol and scoring tooling for validating the reported accuracy |
+
+## Human Evaluation
+
+Validation accuracy measures agreement with the dataset's label, which is not
+the same as being correct. The label for each problem is the first entry of
+`topics_flat`, so problems spanning several topics get an arbitrary primary
+class. Measured on the validation set: 26.4% of items touch more than one of
+the four classes, and 47.7% of the model's errors predict a topic that is in
+that item's own topic list — accuracy rises to 92.55% if any listed topic is
+accepted.
+
+`human_eval/` contains a blind review protocol that separates genuine model
+errors from label artifacts: a stratified sample, sheets for independent
+reviewers who see neither the label nor the prediction, and a scorer reporting
+inter-annotator agreement, accuracy against human consensus with Wilson
+confidence intervals, and an error taxonomy. See `human_eval/README.md`.
 
 ## Dataset
 

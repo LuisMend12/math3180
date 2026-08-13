@@ -1,0 +1,211 @@
+item_id,source_id,stratum,dataset_label,model_pred,model_correct,all_listed_classes
+R001,04i8,random,Combinatorics,Combinatorics,True,Combinatorics
+R002,0gb0,error,Number Theory,Algebra,False,Number Theory|Algebra|Geometry
+R003,09u5,random,Algebra,Number Theory,False,Algebra|Number Theory
+R004,0b1j,random,Algebra,Algebra,True,Algebra
+R005,0iil,error,Combinatorics,Algebra,False,Combinatorics
+R006,09a3,error,Algebra,Combinatorics,False,Algebra
+R007,0gcc,random,Geometry,Geometry,True,Geometry
+R008,02kc,error,Number Theory,Algebra,False,Number Theory
+R009,0c6y,error,Geometry,Algebra,False,Geometry
+R010,000p,random,Geometry,Geometry,True,Geometry
+R011,05ha,random,Geometry,Geometry,True,Geometry
+R012,01wm,random,Geometry,Geometry,True,Geometry
+R013,0bup,random,Algebra,Algebra,True,Algebra
+R014,0isf,random,Algebra,Algebra,True,Algebra|Combinatorics
+R015,01ec,random,Combinatorics,Combinatorics,True,Combinatorics
+R016,02sp,random,Geometry,Geometry,True,Geometry
+R017,0fzz,random,Number Theory,Number Theory,True,Number Theory
+R018,0ej8,random,Algebra,Algebra,True,Algebra
+R019,08sw,error,Algebra,Number Theory,False,Algebra|Number Theory
+R020,0jyo,random,Combinatorics,Combinatorics,True,Combinatorics|Algebra|Number Theory
+R021,0kj8,random,Combinatorics,Combinatorics,True,Combinatorics|Number Theory
+R022,022x,random,Combinatorics,Algebra,False,Combinatorics
+R023,05po,error,Algebra,Number Theory,False,Algebra|Number Theory|Combinatorics
+R024,05ps,random,Geometry,Geometry,True,Geometry
+R025,03ec,random,Geometry,Geometry,True,Geometry
+R026,01ji,error,Number Theory,Algebra,False,Number Theory|Algebra
+R027,0gmp,random,Combinatorics,Combinatorics,True,Combinatorics|Algebra
+R028,0hfm,error,Combinatorics,Number Theory,False,Combinatorics|Algebra
+R029,094e,random,Geometry,Geometry,True,Geometry
+R030,0aq1,error,Algebra,Number Theory,False,Algebra|Number Theory
+R031,03ks,random,Combinatorics,Algebra,False,Combinatorics|Algebra
+R032,07go,random,Combinatorics,Combinatorics,True,Combinatorics
+R033,007w,random,Geometry,Geometry,True,Geometry
+R034,0kmv,error,Algebra,Number Theory,False,Algebra|Number Theory
+R035,08n7,random,Number Theory,Number Theory,True,Number Theory
+R036,0jrg,error,Algebra,Number Theory,False,Algebra|Number Theory
+R037,0hfq,error,Combinatorics,Algebra,False,Combinatorics
+R038,061v,error,Algebra,Combinatorics,False,Algebra|Geometry
+R039,03l1,random,Combinatorics,Combinatorics,True,Combinatorics
+R040,03jl,random,Combinatorics,Combinatorics,True,Combinatorics
+R041,0ady,random,Combinatorics,Algebra,False,Combinatorics
+R042,09dd,error,Number Theory,Combinatorics,False,Number Theory
+R043,029n,random,Algebra,Algebra,True,Algebra
+R044,0gep,random,Geometry,Geometry,True,Geometry
+R045,02wp,random,Combinatorics,Combinatorics,True,Combinatorics
+R046,0er1,random,Algebra,Algebra,True,Algebra
+R047,07lq,random,Number Theory,Number Theory,True,Number Theory
+R048,00oe,random,Algebra,Algebra,True,Algebra
+R049,00on,random,Geometry,Geometry,True,Geometry
+R050,063q,random,Combinatorics,Combinatorics,True,Combinatorics
+R051,0ica,random,Algebra,Algebra,True,Algebra
+R052,0l9a,random,Geometry,Geometry,True,Geometry
+R053,0g7h,random,Number Theory,Number Theory,True,Number Theory
+R054,0a2x,random,Geometry,Combinatorics,False,Geometry
+R055,0geo,random,Geometry,Geometry,True,Geometry
+R056,0284,error,Algebra,Combinatorics,False,Algebra
+R057,0156,error,Algebra,Number Theory,False,Algebra|Number Theory
+R058,03wm,random,Combinatorics,Geometry,False,Combinatorics|Geometry
+R059,0jtw,random,Algebra,Algebra,True,Algebra
+R060,0jw4,random,Combinatorics,Combinatorics,True,Combinatorics
+R061,0cjy,random,Algebra,Number Theory,False,Algebra|Number Theory
+R062,0ixz,random,Algebra,Algebra,True,Algebra
+R063,0dyc,random,Algebra,Algebra,True,Algebra|Number Theory|Combinatorics
+R064,04ss,random,Geometry,Geometry,True,Geometry
+R065,0c59,random,Algebra,Algebra,True,Algebra
+R066,0cvy,error,Geometry,Combinatorics,False,Geometry
+R067,0kxz,random,Geometry,Geometry,True,Geometry
+R068,033f,error,Combinatorics,Algebra,False,Combinatorics
+R069,0b4t,random,Algebra,Algebra,True,Algebra
+R070,03la,error,Geometry,Algebra,False,Geometry|Number Theory|Algebra
+R071,03vg,random,Number Theory,Combinatorics,False,Number Theory|Combinatorics|Algebra
+R072,0h3j,random,Geometry,Geometry,True,Geometry
+R073,07ck,random,Algebra,Algebra,True,Algebra
+R074,020j,random,Algebra,Algebra,True,Algebra
+R075,0klh,random,Algebra,Algebra,True,Algebra
+R076,068m,error,Number Theory,Algebra,False,Number Theory|Combinatorics|Algebra
+R077,07dq,random,Combinatorics,Combinatorics,True,Combinatorics|Number Theory
+R078,0837,random,Number Theory,Algebra,False,Number Theory
+R079,0k3s,error,Combinatorics,Number Theory,False,Combinatorics|Number Theory
+R080,02ow,random,Number Theory,Number Theory,True,Number Theory
+R081,02kd,random,Algebra,Algebra,True,Algebra
+R082,0cko,random,Geometry,Geometry,True,Geometry
+R083,03pb,error,Number Theory,Algebra,False,Number Theory|Algebra
+R084,0a4h,random,Algebra,Algebra,True,Algebra|Number Theory
+R085,0etu,random,Combinatorics,Combinatorics,True,Combinatorics
+R086,0cmi,error,Algebra,Number Theory,False,Algebra|Number Theory
+R087,0gxz,random,Number Theory,Number Theory,True,Number Theory
+R088,08g0,random,Algebra,Combinatorics,False,Algebra
+R089,08hl,random,Algebra,Algebra,True,Algebra
+R090,06xw,random,Algebra,Number Theory,False,Algebra|Number Theory
+R091,00nr,random,Algebra,Algebra,True,Algebra
+R092,0akx,random,Combinatorics,Combinatorics,True,Combinatorics
+R093,002k,error,Combinatorics,Geometry,False,Combinatorics|Algebra
+R094,0h74,random,Algebra,Algebra,True,Algebra
+R095,0eyp,random,Algebra,Algebra,True,Algebra
+R096,0dsp,random,Number Theory,Algebra,False,Number Theory
+R097,0c7e,random,Algebra,Algebra,True,Algebra
+R098,04wb,random,Geometry,Geometry,True,Geometry
+R099,089c,error,Combinatorics,Algebra,False,Combinatorics
+R100,0jgx,random,Geometry,Geometry,True,Geometry
+R101,02pf,random,Combinatorics,Algebra,False,Combinatorics
+R102,06ys,random,Algebra,Number Theory,False,Algebra|Number Theory
+R103,0aug,random,Geometry,Geometry,True,Geometry
+R104,077m,error,Geometry,Combinatorics,False,Geometry|Combinatorics
+R105,08cb,random,Algebra,Algebra,True,Algebra
+R106,0ief,random,Number Theory,Number Theory,True,Number Theory
+R107,0bjw,error,Number Theory,Combinatorics,False,Number Theory|Algebra
+R108,0efq,random,Geometry,Geometry,True,Geometry|Algebra
+R109,0esg,random,Algebra,Algebra,True,Algebra
+R110,030w,error,Number Theory,Algebra,False,Number Theory|Algebra
+R111,0dtf,random,Combinatorics,Combinatorics,True,Combinatorics
+R112,0k7q,random,Combinatorics,Combinatorics,True,Combinatorics
+R113,00sx,random,Combinatorics,Combinatorics,True,Combinatorics|Algebra
+R114,01pb,random,Algebra,Algebra,True,Algebra|Combinatorics
+R115,0l8j,error,Algebra,Number Theory,False,Algebra|Number Theory
+R116,045y,random,Combinatorics,Combinatorics,True,Combinatorics|Algebra
+R117,06k5,random,Algebra,Algebra,True,Algebra
+R118,09io,error,Number Theory,Algebra,False,Number Theory|Algebra
+R119,00yd,random,Combinatorics,Combinatorics,True,Combinatorics
+R120,00ri,error,Combinatorics,Number Theory,False,Combinatorics|Algebra|Number Theory
+R121,0jbm,error,Algebra,Combinatorics,False,Algebra|Geometry
+R122,06ek,error,Number Theory,Combinatorics,False,Number Theory|Combinatorics
+R123,02q1,error,Combinatorics,Geometry,False,Combinatorics
+R124,02v4,random,Combinatorics,Combinatorics,True,Combinatorics
+R125,033r,random,Combinatorics,Combinatorics,True,Combinatorics
+R126,07dh,random,Geometry,Geometry,True,Geometry|Algebra
+R127,01ja,random,Geometry,Geometry,True,Geometry
+R128,0dt4,random,Number Theory,Number Theory,True,Number Theory
+R129,00kd,random,Geometry,Geometry,True,Geometry
+R130,01za,error,Algebra,Combinatorics,False,Algebra|Combinatorics
+R131,0gcv,random,Algebra,Algebra,True,Algebra
+R132,0jad,random,Algebra,Combinatorics,False,Algebra|Combinatorics
+R133,04r4,random,Number Theory,Number Theory,True,Number Theory|Algebra
+R134,0bpo,random,Number Theory,Number Theory,True,Number Theory|Algebra
+R135,0c5h,random,Algebra,Algebra,True,Algebra
+R136,03v5,random,Geometry,Geometry,True,Geometry
+R137,0fwy,random,Geometry,Geometry,True,Geometry
+R138,08cd,random,Combinatorics,Combinatorics,True,Combinatorics
+R139,0fa4,random,Algebra,Combinatorics,False,Algebra
+R140,01uy,error,Number Theory,Combinatorics,False,Number Theory|Combinatorics
+R141,08zl,error,Algebra,Number Theory,False,Algebra|Combinatorics
+R142,0599,random,Algebra,Algebra,True,Algebra
+R143,08rx,error,Number Theory,Algebra,False,Number Theory|Algebra
+R144,087f,error,Number Theory,Combinatorics,False,Number Theory
+R145,0fvs,random,Combinatorics,Combinatorics,True,Combinatorics
+R146,0gai,random,Geometry,Geometry,True,Geometry
+R147,0coh,error,Algebra,Combinatorics,False,Algebra|Combinatorics
+R148,05gq,random,Geometry,Geometry,True,Geometry
+R149,00s0,random,Combinatorics,Combinatorics,True,Combinatorics
+R150,0kav,random,Number Theory,Algebra,False,Number Theory|Algebra
+R151,0c8x,random,Algebra,Algebra,True,Algebra
+R152,08au,random,Combinatorics,Combinatorics,True,Combinatorics
+R153,07qc,random,Geometry,Geometry,True,Geometry
+R154,0c6b,random,Number Theory,Number Theory,True,Number Theory|Algebra
+R155,0gav,random,Geometry,Geometry,True,Geometry
+R156,06zy,random,Number Theory,Number Theory,True,Number Theory|Algebra
+R157,02j3,random,Algebra,Algebra,True,Algebra
+R158,059l,random,Algebra,Combinatorics,False,Algebra
+R159,03be,random,Number Theory,Number Theory,True,Number Theory
+R160,06u6,random,Algebra,Algebra,True,Algebra|Number Theory
+R161,06ld,error,Combinatorics,Geometry,False,Combinatorics|Geometry
+R162,059g,random,Geometry,Geometry,True,Geometry
+R163,0684,random,Geometry,Geometry,True,Geometry
+R164,00cm,random,Number Theory,Number Theory,True,Number Theory|Combinatorics
+R165,029x,random,Number Theory,Algebra,False,Number Theory
+R166,03m6,error,Number Theory,Combinatorics,False,Number Theory
+R167,0028,error,Number Theory,Combinatorics,False,Number Theory
+R168,03c0,random,Geometry,Geometry,True,Geometry
+R169,0b0p,error,Algebra,Combinatorics,False,Algebra|Combinatorics
+R170,0917,random,Geometry,Geometry,True,Geometry
+R171,0h04,error,Number Theory,Geometry,False,Number Theory
+R172,05cm,random,Combinatorics,Combinatorics,True,Combinatorics
+R173,05i5,error,Combinatorics,Geometry,False,Combinatorics|Geometry
+R174,0fa9,random,Geometry,Geometry,True,Geometry|Algebra
+R175,061p,random,Geometry,Geometry,True,Geometry
+R176,0hgi,random,Number Theory,Combinatorics,False,Number Theory|Algebra
+R177,0k01,error,Number Theory,Algebra,False,Number Theory|Algebra
+R178,03gm,random,Number Theory,Number Theory,True,Number Theory|Algebra
+R179,0jdz,random,Combinatorics,Combinatorics,True,Combinatorics
+R180,0411,random,Combinatorics,Combinatorics,True,Combinatorics
+R181,09cl,error,Combinatorics,Algebra,False,Combinatorics|Number Theory|Algebra
+R182,0f8u,error,Algebra,Number Theory,False,Algebra
+R183,02x4,error,Algebra,Number Theory,False,Algebra
+R184,0771,error,Number Theory,Combinatorics,False,Number Theory|Algebra|Geometry
+R185,05ca,random,Algebra,Algebra,True,Algebra|Number Theory
+R186,01hg,random,Geometry,Geometry,True,Geometry|Algebra
+R187,0am2,error,Combinatorics,Geometry,False,Combinatorics
+R188,073f,error,Number Theory,Algebra,False,Number Theory|Algebra|Combinatorics
+R189,0bcg,random,Algebra,Algebra,True,Algebra
+R190,06ti,random,Geometry,Geometry,True,Geometry
+R191,0k2m,random,Combinatorics,Combinatorics,True,Combinatorics|Algebra
+R192,0be4,random,Geometry,Geometry,True,Geometry|Combinatorics|Algebra
+R193,09ul,random,Algebra,Combinatorics,False,Algebra
+R194,08ym,random,Geometry,Geometry,True,Geometry
+R195,073q,random,Combinatorics,Combinatorics,True,Combinatorics|Geometry
+R196,02in,error,Algebra,Combinatorics,False,Algebra
+R197,0495,random,Algebra,Algebra,True,Algebra|Geometry
+R198,02of,random,Algebra,Combinatorics,False,Algebra
+R199,01bj,error,Geometry,Combinatorics,False,Geometry|Combinatorics
+R200,0dn7,error,Number Theory,Combinatorics,False,Number Theory|Algebra
+R201,0a2p,random,Algebra,Number Theory,False,Algebra
+R202,0izy,error,Geometry,Algebra,False,Geometry
+R203,0gye,random,Algebra,Algebra,True,Algebra
+R204,0jc2,random,Algebra,Algebra,True,Algebra
+R205,0f0j,random,Algebra,Algebra,True,Algebra
+R206,0l50,random,Geometry,Geometry,True,Geometry
+R207,0jt7,error,Algebra,Combinatorics,False,Algebra
+R208,0gji,random,Algebra,Algebra,True,Algebra
+R209,00fj,random,Geometry,Geometry,True,Geometry
+R210,063k,error,Number Theory,Combinatorics,False,Number Theory|Combinatorics

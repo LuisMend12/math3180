@@ -1,0 +1,10 @@
+{
+  "multi_topic_rate": 0.26436570589315217,
+  "error_rate": 0.1426473288048467,
+  "errors_matching_a_listed_topic": 371,
+  "lenient_accuracy": 0.9254635579217918,
+  "validation_accuracy": 0.8573526711951533,
+  "validation_size": 5447,
+  "n_random": 150,
+  "n_error": 60
+}

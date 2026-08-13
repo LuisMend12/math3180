@@ -1,0 +1,1852 @@
+# MathNet Human Review Packet
+
+210 problems. For each, read the statement and record in your CSV:
+
+- `primary_topic`: one of Algebra, Combinatorics, Geometry, Number Theory
+- `secondary_topic`: another class if the problem genuinely belongs to two, else blank
+- `confidence`: high / medium / low
+- `notes`: optional, e.g. why it was hard to place
+
+Do not discuss items with the other reviewers until all sheets are in.
+
+---
+
+## R001
+
+Five teams are playing at a football tournament, each playing with the other exactly once. Each victory is worth 3 points, defeat 0 points and a draw 1 point. Is it possible that at the end of the tournament, in the final ranking, each team except the last has exactly two points more than the next one?
+
+---
+
+## R002
+
+2. 任選橢圓 $C: x^2 + 2y^2 = 2098$ 上的一個有理點 $P_0 = (x_p, y_p)$。我們將依以下方式遞迴決定 $P_1, P_2, \cdots$：對於所有 $i = 0, 1, \cdots,$
+(1) 選取一個不在 $C$ 上的整點 $Q_i = (x_i, y_i)$，使得 $|x_i| < 50$ 且 $|y_i| < 50$。
+(2) 連接 $\overline{P_iQ_i}$，並令其與 $C$ 的另一交點為 $P_{i+1}$。
+試證：對於任何 $P_0$，我們都可以適當選取 $Q_0, Q_1, \cdots$，使得存在某個非負整數 $k$，讓 $\overline{OP_k} = 2017$。
+
+（我們稱 $(x, y)$ 為整點，若且唯若 $x$ 和 $y$ 都是整數。我們稱 $(x, y)$ 為有理點，若且唯若 $x$ 和 $y$ 都是有理數。）
+
+---
+
+## R003
+
+Starting with a positive integer, a *fragment* of that number is any positive number obtained by removing one or more digits from the beginning and/or end of that number. For example: the numbers $2$, $1$, $9$, $20$, $19$, and $201$ are the fragments of $2019$.
+What is the smallest positive integer $n$ such that the following holds: there is a fragment of $n$ such that when you add this fragment to $n$ itself, you get $2019$?
+
+---
+
+## R004
+
+Problem:
+Find the sum of the squares of the real roots of the equation $2x^{4} - 3x^{3} + 7x^{2} - 9x + 3 = 0$.
+
+---
+
+## R005
+
+Problem:
+Compute
+$$
+\sum_{n_{60}=0}^{2} \sum_{n_{59}=0}^{n_{60}} \cdots \sum_{n_{2}=0}^{n_{3}} \sum_{n_{1}=0}^{n_{2}} \sum_{n_{0}=0}^{n_{1}} 1
+$$
+
+---
+
+## R006
+
+Let $A$ be a nonempty subset of the positive integers. If $x \in A$, then $[\sqrt[3]{x}] \in A$ and $[9x] \in A$ holds for any $x$. Prove that $A$ is the set of all positive integers. ($[x]$ denotes the integer part of $x$)
+
+---
+
+## R007
+
+設 $\triangle ABC$ 為各邊長不相同的銳角三角形，點 $O$, $H$ 分別為其外心與垂心。
+直線 $OA$ 分別與 $\triangle ABC$ 中過點 $B$ 的高及過點 $C$ 的高交於點 $P$, $Q$。
+試證：三角形 $PQH$ 的外心，落在三角形 $ABC$ 的某一條中線上。
+
+(註: 三角形中，頂點與對邊中點的連線，稱為中線。)
+
+---
+
+## R008
+
+Problem:
+
+Qual é o menor número inteiro positivo $N$ tal que $\frac{N}{3}$, $\frac{N}{4}$, $\frac{N}{5}$, $\frac{N}{6}$ e $\frac{N}{7}$ são números inteiros?
+
+A) 420
+B) 350
+C) 210
+D) 300
+E) 280
+
+---
+
+## R009
+
+Let $a, b, c$ be distinct complex numbers, such that $|a| = |b| = |c| = 1$. Prove that if $|a+b-c|^2 + |b+c-a|^2 + |c+a-b|^2 = 12$, then the geometric images of $a, b, c$ are the vertices of an equilateral triangle.
+Mihaela Berindeanu
+
+---
+
+## R010
+
+Sea $ABC$ un triángulo con $AB = 30$, $BC = 50$, $CA = 40$. Las rectas $l_0, l_1, l_2$ son paralelas a $BC$, $CA$, $AB$, respectivamente, y cortan al triángulo. Las distancias entre $l_0$ y $BC$, $l_1$ y $CA$, $l_2$ y $AB$ son $1$, $2$, $3$, respectivamente. Hallar los lados del triángulo que determinan $l_0, l_1, l_2$.
+
+---
+
+## R011
+
+Problem:
+
+Soit $ABC$ un triangle, $D$ est le milieu de l'arc $BC$ du cercle $ABC$ ne contenant pas $A$, $Z$ est l'unique point sur la bissectrice extérieure de $\widehat{BAC}$ tel que $ZA = ZC$. Montrer que le cercle $ADZ$ passe par le milieu du côté $[AB]$.
+
+---
+
+## R012
+
+Let $O$ be the circumcenter and $H$ be the orthocenter of an acute-angled triangle $ABC$. Point $T$ is the midpoint of the segment $AO$. The perpendicular bisector of $AO$ intersects the line $BC$ at point $S$.
+Prove that the circumcircle of the triangle $AST$ bisects the segment $OH$.
+
+---
+
+## R013
+
+Problem:
+
+Fie $A \in M_{2}(\mathbb{C})$ și $A^{2}-3 A+5 I_{2}=O_{2}$.
+a) Aflați inversa matricei $A$.
+b) Calculați $\operatorname{det}\left(A^{2}-I_{2}\right)+\operatorname{det}\left(A^{2}+A\right)-\operatorname{det}\left(A^{2}+2 I_{2}\right)$.
+
+---
+
+## R014
+
+Two sequences of integers, $a_1, a_2, a_3, \dots$ and $b_1, b_2, b_3, \dots$, satisfy the equation
+$$
+(a_n - a_{n-1})(a_n - a_{n-2}) + (b_n - b_{n-1})(b_n - b_{n-2}) = 0
+$$
+for each integer $n$ greater than $2$. Prove that there is a positive integer $k$ such that $a_k = a_{k+2008}$.
+
+---
+
+## R015
+
+There are $2019$ plates placed around a round table and on each of them there is one coin. Alice and Bob are playing a game that proceeds in rounds indefinitely as follows. In each round, Alice first chooses a plate on which there is at least one coin. Then Bob moves one coin from this plate to one of the two adjacent plates, chosen by him. Determine whether it is possible for Bob to select his moves so that, no matter how Alice selects her moves, there are never more than two coins on any plate.
+
+---
+
+## R016
+
+Problem:
+
+Uma folha de papel é retangular, com base igual a $20~\mathrm{cm}$ e altura $10~\mathrm{cm}$. Esta folha é dobrada nas linhas pontilhadas conforme a figura abaixo, e no final recortada por uma tesoura na linha indicada, a qual é paralela à base e está na metade da altura do triângulo.
+![](attached_image_1.png)
+
+a) Depois de cortar no local indicado, em quantas partes a folha ficou dividida?
+
+b) Qual a área da maior parte?
+
+---
+
+## R017
+
+Problem:
+Finde alle Tripel $(a, b, c)$ natürlicher Zahlen, sodass
+$$
+\frac{a+b}{c}, \frac{b+c}{a}, \frac{c+a}{b}
+$$
+ebenfalls natürliche Zahlen sind.
+
+---
+
+## R018
+
+Problem:
+
+Za katere vrednosti parametra $a \in \mathbb{R}$ je funkcija $f(x)=\log \left(x^{2}+(a+4) x+9\right)$ definirana na množici vseh realnih števil?
+
+(A) $a<2$
+(B) $a>-10$
+(C) $-2<a<10$
+(D) $-10<a<2$
+(E) $a=-4$
+
+---
+
+## R019
+
+Does there exist a positive integer $n$ satisfying the following condition?
+
+Condition: For an arbitrary rational number $r$, there exist an integer $b$ and nonzero integers $a_1, a_2, \dots, a_n$ such that
+$$
+r = b + \frac{1}{a_1} + \dots + \frac{1}{a_n}
+$$
+
+---
+
+## R020
+
+Problem:
+
+Rebecca has twenty-four resistors, each with resistance $1$ ohm. Every minute, she chooses any two resistors with resistance of $a$ and $b$ ohms respectively, and combine them into one by one of the following methods:
+- Connect them in series, which produces a resistor with resistance of $a+b$ ohms;
+- Connect them in parallel, which produces a resistor with resistance of $\frac{a b}{a+b}$ ohms;
+- Short-circuit one of the two resistors, which produces a resistor with resistance of either $a$ or $b$ ohms.
+
+Suppose that after twenty-three minutes, Rebecca has a single resistor with resistance $R$ ohms. How many possible values are there for $R$?
+
+If the correct answer is $C$ and your answer is $A$, you get $\max \left(\left\lfloor 30\left(1-\left|\log _{\log _{2} C} \frac{A}{C}\right|\right)\right\rfloor, 0\right)$ points.
+
+---
+
+## R021
+
+Problem:
+
+Bob knows that Alice has $2021$ secret positive integers $x_{1}, \ldots, x_{2021}$ that are pairwise relatively prime. Bob would like to figure out Alice's integers. He is allowed to choose a set $S \subseteq \{1,2, \ldots, 2021\}$ and ask her for the product of $x_{i}$ over $i \in S$. Alice must answer each of Bob's queries truthfully, and Bob may use Alice's previous answers to decide his next query. Compute the minimum number of queries Bob needs to guarantee that he can figure out each of Alice's integers.
+
+---
+
+## R022
+
+Problem:
+
+As páginas do dicionário - Para numerar as páginas de um dicionário, imprimiu-se 1988 vezes o algarismo 1. Quantas páginas tem esse dicionário?
+
+---
+
+## R023
+
+Problem:
+
+Soit $p$ un nombre premier, $m$ un entier naturel. Trouver le plus petit entier $d$ tel qu'il existe un polynôme unitaire $Q$ de degré $d$ à coefficients entiers tel que, pour tout entier $n$, $p^{m} \mid Q(n)$.
+
+---
+
+## R024
+
+Problem:
+
+Soit $ABC$ un triangle.
+
+Pour un point $P$ de $(BC)$ donné, on note $E(P)$ et $F(P)$ les deuxièmes points d'intersection des droites $(AB)$ et $(AC)$ avec le cercle de diamètre $[AP]$. Soit $T(P)$ l'intersection des tangentes à ce cercle en $E(P)$ et $F(P)$.
+
+Montrer que quand $P$ varie sur $(BC)$, le lieu géométrique de $T(P)$ est une droite.
+
+---
+
+## R025
+
+Given the functions $f(x) = |x-2| - |x-4|$ and $g(x) = |x-8| - 2$. Find the area of the figure with vertices, the intersection points of the graphs of the functions $f(x)$ and $g(x)$ and the intersection points of the graph of $g(x)$ with the x-axis.
+(Nedyalka Dimitrova)
+
+---
+
+## R026
+
+Show that the sum of the decimal digits of $2^{2^{2^{2023}}}$ is greater than $2023$.
+
+---
+
+## R027
+
+For a positive integer $n$, let $p(n)$ denote the number of sequences of positive integers the sum of whose terms is equal to $n$. Show that
+$$
+\frac{1 + p(1) + p(2) + \dots + p(n-1)}{p(n)} \le \sqrt{2n} .
+$$
+
+---
+
+## R028
+
+For which largest $k$ does there exist a permutation $(a_1, a_2, \ldots, a_{2022})$ of integers $(1, 2, \ldots, 2022)$ such that for some $k$ integers $1 \le i \le 2022$ the fraction $\frac{a_1 + a_2 + \cdots + a_i}{1 + 2 + \cdots + i}$ is an integer larger than $1$?
+
+(Oleksii Masalitin)
+
+---
+
+## R029
+
+Problem:
+
+Let $ABC$ be a triangle with incenter $I$. The incircle $\omega$ of $ABC$ is tangent to the line $BC$ at point $D$. Denote by $E$ and $F$ the points satisfying $AI \parallel BE \parallel CF$ and $\angle BEI = \angle CFI = 90^\circ$. Lines $DE$ and $DF$ intersect $\omega$ again at points $E'$ and $F'$, respectively. Prove that $E'F' \perp AI$.
+
+---
+
+## R030
+
+Problem:
+Find the largest three-digit number such that the number minus the sum of its digits is a perfect square.
+
+---
+
+## R031
+
+Problem:
+Prove that
+$$
+\frac{1}{1999} < \frac{1}{2} \cdot \frac{3}{4} \cdot \frac{5}{6} \cdots \frac{1997}{1998} < \frac{1}{44}
+$$
+
+---
+
+## R032
+
+Find the maximum number of 5-element subsets of the set $\{1, 2, \dots, 20\}$ such that the intersection of any pair of these subsets has exactly one element.
+
+---
+
+## R033
+
+In the acute-angled triangle $ABP$ ($AB > BP$) the altitudes are $BH$, $PQ$ and $AS$. The extension of $QS$ intersects line $AP$ at $C$. The extension of $HS$ intersects $BC$ at $L$. If $HS = SL$ and $HL$ is perpendicular to $BC$, compute $\frac{SL}{SC}$.
+
+---
+
+## R034
+
+A two-digit positive integer is said to be *cuddly* if it is equal to the sum of its nonzero tens digit and the square of its units digit. How many two-digit positive integers are cuddly?
+(A) 0 (B) 1 (C) 2 (D) 3 (E) 4
+
+---
+
+## R035
+
+Problem:
+Solve in positive integers the equation $1005^{x} + 2011^{y} = 1006^{z}$.
+
+---
+
+## R036
+
+Problem:
+Let $z = e^{\frac{2\pi i}{101}}$ and let $\omega = e^{\frac{2\pi i}{10}}$. Prove that
+$$
+\prod_{a=0}^{9} \prod_{b=0}^{100} \prod_{c=0}^{100} \left(\omega^{a} + z^{b} + z^{c}\right)
+$$
+is an integer and find (with proof) its remainder upon division by $101$.
+
+---
+
+## R037
+
+You are given some positive integer $n$. Prove that for any real numbers $a_1, a_2, ..., a_n$ there exists some number of form $k\sqrt{2}$, where $k$ is some positive integer, that all numbers $k\sqrt{2} + a_1, k\sqrt{2} + a_2, ..., k\sqrt{2} + a_n$ are irrational.
+
+---
+
+## R038
+
+Problem:
+
+Gegeben sind die sechs reellen Zahlen $a, b, c$ und $x, y, z$ so, dass
+
+a) $0 < b - c < a < b + c$
+
+b) $a x + b y + c z = 0$
+
+Man ermittle (mit Begründung!) das Vorzeichen von $a y z + b x z + c x y$.
+
+---
+
+## R039
+
+Problem:
+
+Suppose $a_{1}, a_{2}, \ldots, a_{8}$ are eight distinct integers from $\{1,2, \ldots, 16,17\}$. Show that there is an integer $k>0$ such that the equation $a_{i}-a_{j}=k$ has at least three different solutions. Also, find a specific set of 7 distinct integers from $\{1,2, \ldots, 16,17\}$ such that the equation $a_{i}-a_{j}=k$ does not have three distinct solutions for any $k>0$.
+
+---
+
+## R040
+
+Problem:
+
+Suppose that $S$ is a finite set of at least five points in the plane; some are coloured red, the others are coloured blue. No subset of three or more similarly coloured points is collinear. Show that there is a triangle
+(i) whose vertices are all the same colour, and
+(ii) at least one side of the triangle does not contain a point of the opposite colour.
+
+---
+
+## R041
+
+Шаховската табла е поделена на 64 единечни квадрати. Најди го бројот на сите квадрати на шаховската табла, кои се формирани од единечните квадрати.
+
+---
+
+## R042
+
+5-аас их бөгөөд хамгийн их ба бага 2-ынх нь ялгавар 10-аас бага 4 анхны тооны нийлбэр 60-д хуваагдахыг батал.
+
+---
+
+## R043
+
+Problem:
+
+Família Sétimo - O Sr. e Sra. Sétimo têm 7 filhos, todos nascidos em 1º de abril, na verdade em seis 1º de abril consecutivos. Este ano, para seus aniversários, a Sra. Sétimo fez um bolo com velinhas para cada um - o número de velas igual ao número de anos de cada um. João Sétimo, o filho que mais gosta de Matemática, reparou que nesse ano o número total de velinhas é o dobro do que havia 2 anos atrás e que há 2 bolos a mais. Quantas velinhas serão acesas esse ano?
+
+---
+
+## R044
+
+設 $ABC$ 為銳角三角形，$I$ 及 $I_A$ 分別為其內心及角 $A$ 內的旁心，且 $AB < AC$。設其內切圓交 $BC$ 於點 $D$。直線 $AD$ 分別與 $BI_A$ 及 $CI_A$ 交於點 $E$ 及 $F$。證明三角形 $AID$ 的外接圓與三角形 $IAEF$ 的外接圓相切。
+
+Let $I$ and $I_A$ be the incenter and the $A$-excenter of an acute-angled triangle $ABC$, with $AB < AC$. Let the incircle meet $BC$ at $D$. The line $AD$ meets $BI_A$ and $CI_A$ at $E$ and $F$, respectively. Prove that the circumcircles of triangles $AID$ and $IAEF$ are tangent to each other.
+
+---
+
+## R045
+
+Problem:
+
+Em um torneio com 5 times, não existem empates. De quantos modos podem ocorrer os $\frac{5 \cdot 4}{2}=10$ jogos do torneio de modo que, tanto não tenhamos um time que ganhou todas quanto um time que não perdeu todas as partidas?
+
+---
+
+## R046
+
+If $f(x) = 2^x$, what is the value of $\frac{f(x+1) + f(x)}{f(x)}$?
+
+---
+
+## R047
+
+a) For each integer $a$ not divisible by $7$, let $N(a)$ denote the least among all positive integers $n$ such that $49$ divides $a^n - 1$. For each positive integer $N$, let $A_N := \{a \in \mathbb{Z} : 0 < a < 49 \text{ and } N(a) = N\}$. Show that
+$$
+\begin{align*}
+|A_1| &= |A_2| = 1, & |A_3| &= |A_6| = 2, \\
+|A_7| &= |A_{14}| = 6, & |A_{21}| &= |A_{42}| = 12
+\end{align*}
+$$
+and $A_N = \emptyset$ for all other values of $N$.
+
+b) Find the least positive integer $n$ such that $2009$ divides $a^n - 1$ for all integers $a$ relatively prime to $2009$.
+
+---
+
+## R048
+
+Determine the smallest constant $C$ such that the inequality
+$$
+(X + Y)^2 (X^2 + Y^2 + C) + (1 - XY)^2 \geq 0
+$$
+holds for all real numbers $X$ and $Y$.
+For which values of $X$ and $Y$ does equality hold for this smallest constant $C$?
+
+---
+
+## R049
+
+Let $\mathcal{ABC}$ be an acute triangle with orthocenter $H$. The circumcircle of the triangle $\mathcal{BHC}$ intersects $\mathcal{AC}$ a second time in point $P$ and $\mathcal{AB}$ a second time in point $Q$.
+Prove that $H$ is the circumcenter of the triangle $\mathcal{APQ}$.
+
+---
+
+## R050
+
+Problem:
+
+Gegeben seien positive ganze Zahlen $k$ und $n$ mit $n>k$. Unter einem Binärwort der Länge $n$ verstehen wir eine Folge aus $n$ Folgengliedern, die alle 0 oder 1 sind. Anja wählt unter allen möglichen Binärwörtern der Länge $n$ eines aus. Dann schreibt sie alle Binärwörter der Länge $n$, die sich von ihrem gewählten Wort an genau $k$ Stellen unterscheiden, an eine Tafel. Anschließend betritt Bernhard den Raum. Anja nennt ihm den Wert von $k$ und danach betrachtet er die Binärwörter an der Tafel. Er versucht nun das zu Beginn von Anja gewählte Binärwort zu erraten. Was ist (in Abhängigkeit von $k$ und $n$ ) die minimale Anzahl an Versuchen, die Bernhard benötigt um das Binärwort mit Sicherheit zu erraten?
+
+---
+
+## R051
+
+Problem:
+Compute:
+$$
+\left\lfloor\frac{2005^{3}}{2003 \cdot 2004}-\frac{2003^{3}}{2004 \cdot 2005}\right\rfloor .
+$$
+
+---
+
+## R052
+
+A triangle $ABC$ inscribed in a circle with center $O$ has three altitudes $AH$, $BK$, $CL$. Let $A_0$, $B_0$, $C_0$ respectively be the midpoints of $AH$, $BK$, $CL$.
+The incircle with center $I$ of triangle $ABC$ touches the sides $BC$, $CA$, $AB$ respectively at $D$, $E$, $F$.
+
+Prove that the four lines $A_0D$, $B_0E$, $C_0F$ and $OI$ are concurrent. (When $O$ coincides with $I$, we consider the line $OI$ as an arbitrary line passing through $O$).
+
+---
+
+## R053
+
+設 $x, y, z$ 為正整數, 且 $z(xz+1)^2 = (5z+2y)(2z+y)$, 試證: $z$ 必為奇數且 $z$ 為完全平方數。
+
+---
+
+## R054
+
+Xander draws five points and a number of infinitely long lines on an infinite sheet of paper. He does this in such a way that on each line there are at least two of those points and that the lines intersect only at points that Xander has drawn.
+What is the maximum number of lines Xander could have drawn?
+A) 3   B) 4   C) 5   D) 6   E) 7
+
+---
+
+## R055
+
+設 $ABCD$ 為凸四邊形，其中任兩邊皆不等長，且 $AC \perp BD$。設 $O_1, O_2$ 分別為三角形 $ABD$ 與 $CBD$ 的外心。證明：直線 $AO_2$、$CO_1$ 以及三角形 $ABC$ 的尤拉線、三角形 $ADC$ 的尤拉線四線共點。
+
+（註：三角形的尤拉線為其外心、重心、垂心所在的直線。）
+
+Let $ABCD$ be a convex quadrilateral with pairwise distinct side lengths such that $AC \perp BD$. Let $O_1, O_2$ be the circumcenters of $\triangle ABD, \triangle CBD$, respectively. Show that $AO_2, CO_1$, the Euler line of $\triangle ABC$ and the Euler line of $\triangle ADC$ are concurrent. (Remark. The *Euler line* of a triangle is the line on which its circumcenter, centroid, and orthocenter lie.)
+
+---
+
+## R056
+
+Problem:
+
+Considere cinco números reais positivos ordenados por $0<a \leq b \leq c \leq d \leq e$. Sabe-se que sempre que tiramos um destes números, podemos separar os outros quatro em dois grupos tais que a soma dos números de um grupo é igual à soma dos números do outro grupo. Se uma sequência $(a, b, c, d, e)$ satisfaz esta condição, dizemos que ela é quase-equilibrada. Existem sequências que atendem a uma condição mais restrita: se retirarmos um número podemos separar os quatro números restantes em dois grupos com a mesma quantidade de números tais que a soma dos números de um grupo é igual à soma dos números do outro grupo. Se uma sequência de números reais positivos $(a, b, c, d, e)$ satisfaz esta condição mais restrita, dizemos que essa sequência é equilibrada.
+
+a) Mostre um exemplo de cinco números reais positivos ordenados por $0<a \leq b \leq c \leq d \leq e$, com $a<e$, que formam uma sequência quase-equilibrada. Veja que podemos fazer alguns deles iguais se isto for conveniente.
+
+b) Se uma sequência equilibrada possui três termos iguais, mostre que os cinco números são obrigatoriamente iguais.
+
+c) Considere uma sequência equilibrada $(a, b, c, d, e)$ com $0<a \leq b \leq c \leq d \leq e$. Sabe-se ainda que $(e+c)=(b+d)$ e que $(e+a)=(c+d)$. Prove que os cinco números são iguais.
+
+---
+
+## R057
+
+Problem:
+Find all finite sets of positive integers with at least two elements such that for any two numbers $a, b$ ($a > b$) belonging to the set, the number $\frac{b^{2}}{a-b}$ belongs to the set, too.
+
+---
+
+## R058
+
+Let $m$, $n$ be integers with $4 < m < n$, and $A_1, A_2, \dots, A_{2n+1}$ be a regular $2n + 1$ polygon. In addition, let $P = \{A_1, A_2, \dots, A_{2n+1}\}$. Find the number of convex $m$-gons with exactly two acute internal angles whose vertices are all in $P$. (Posed by Leng Gangsong)
+
+---
+
+## R059
+
+Problem:
+
+Complex number $\omega$ satisfies $\omega^{5}=2$. Find the sum of all possible values of
+$$
+\omega^{4}+\omega^{3}+\omega^{2}+\omega+1
+$$
+
+---
+
+## R060
+
+Problem:
+
+For $n > 1$, consider an $n \times n$ chessboard and place pieces at the centers of different squares.
+
+a. With $2n$ chess pieces on the board, show that there are 4 pieces among them that form the vertices of a parallelogram.
+
+b. Show that there is a way to place $(2n-1)$ chess pieces so that no 4 of them form the vertices of a parallelogram.
+
+---
+
+## R061
+
+Determine the set of rational numbers $r$ for which there exist non-negative integers $a$ and $b$, such that $\frac{a+b}{2} - \sqrt{ab} = r$.
+
+---
+
+## R062
+
+Find all triples $(x, y, z)$ of real numbers that satisfy the system of equations
+$$
+\begin{cases} x^3 = 3x - 12y + 50, \\ y^3 = 12y + 3z - 2, \\ z^3 = 27z + 27x. \end{cases}
+$$
+
+---
+
+## R063
+
+Problem:
+
+Jaka si je zamislil trimestno število $x$, ki ima v zapisu različne neničelne števke. Nato je na list napisal vsa druga trimestna števila, ki jih je lahko zapisal s števkami števila $x$. Določi vsa možna števila $x$, če je vsota števil na listu enaka $3434$.
+
+---
+
+## R064
+
+We are given $n$ points in a plane, $n \ge 3$, no three of them collinear. Consider all the interior angles of all triangles with vertices in given points and denote $\phi$ the size of the smallest angle. For given $n$ find the largest possible $\phi$.
+
+---
+
+## R065
+
+Let $f : [0, 1] \to \mathbb{R}$ be an integrable function, and let $(a_n)_{n \ge 1}$ be a bounded below sequence of real numbers, so that $\lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^{n} a_k = a < \infty$. Prove that
+$$
+\lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^{n} a_k f\left(\frac{k}{n}\right) = a \int_{0}^{1} f(x) dx.
+$$
+
+---
+
+## R066
+
+Five points are marked in the plane. It is permitted to choose some of them and change their positions; the distances between the chosen points should be preserved. Prove that it is possible to perform such change so as to obtain a configuration of five points possessing an axis of symmetry.
+
+---
+
+## R067
+
+Problem:
+
+Pentagon $S P E A K$ is inscribed in triangle $N O W$ such that $S$ and $P$ lie on segment $N O$, $K$ and $A$ lie on segment $N W$, and $E$ lies on segment $O W$. Suppose that $N S = S P = P O$ and $N K = K A = A W$. Given that $E P = E K = 5$ and $E A = E S = 6$, compute $O W$.
+
+---
+
+## R068
+
+Problem:
+Let $A=\{1,2, \ldots, n\}, n \geq 4$. For any function $f: A \rightarrow A$ and any $a \in A$ define $f_{1}(a)=f(a)$, $f_{i+1}(a)=f\left(f_{i}(a)\right)$, $i \geq 1$. Find the number of the functions $f$ such that $f_{n-2}$ is a constant function but $f_{n-3}$ is not.
+
+---
+
+## R069
+
+Problem:
+
+Suppose that $P(x)$ and $Q(x)$ are both quadratic polynomials with leading coefficient $1$ such that $P(P(x)-x) = (Q(x))^2$ for all real numbers $x$ and $P(2) = 0$. Find the sum of all possible values of $P(10)$.
+
+---
+
+## R070
+
+Problem:
+
+Consider a standard twelve-hour clock whose hour and minute hands move continuously. Let $m$ be an integer, with $1 \leq m \leq 720$. At precisely $m$ minutes after 12:00, the angle made by the hour hand and minute hand is exactly $1^{\circ}$. Determine all possible values of $m$.
+
+---
+
+## R071
+
+Given positive integers $m, n \ge 2$, first select two different $a_i, a_j$ ($j > i$) in the integer set $A = \{a_1, a_2, \dots, a_n\}$ and take the difference $a_j - a_i$. Then arrange the $\binom{n}{2}$ differences in ascending order to form a new sequence, which we call 'derived sequence' and is denoted by $\bar{A}$. The number of elements in $\bar{A}$ that can be divided by $m$ is denoted by $\bar{A}(m)$. Prove that for any $m \ge 2$, the corresponding derived sequences $\bar{A}$ and $\bar{B}$, with regard to $A = \{a_1, a_2, \dots, a_n\}$ and $B = \{1, 2, \dots, n\}$, satisfy the inequality $\bar{A}(m) \ge \bar{B}(m)$.
+
+---
+
+## R072
+
+For a triangle *ABC*, $I_A$ is the center of excircle opposite vertex $A$. Prove that points $B$, $C$ and the circumcenters of triangles $ABI_A$ and $ACI_A$ are cyclic.
+
+---
+
+## R073
+
+A $(n + 1)$-tuple $(h_1, h_2, \dots, h_{n+1})$ where for every $1 \le i \le n + 1$, $h_i(x_1, x_2, \dots, x_n)$ is an $n$-variable polynomial with real coefficients is called **good** if the following condition holds.
+For any $n$ functions $f_1, f_2, \dots, f_n : \mathbb{R} \to \mathbb{R}$, if for all $1 \le i \le n + 1$, $P_i(x) = h_i(f_1(x), f_2(x), \dots, f_n(x))$ is a polynomial in variable $x$, then $f_1(x), f_2(x), \dots, f_n(x)$ are polynomials.
+
+a) Prove that for all positive integers $n$, there exists a **good** $(n+1)$-tuple $(h_1, h_2, \dots, h_{n+1})$ such that the degree of each $h_i$ is more than one.
+
+b) Prove that there does not exist any integer $n > 1$ for which there is a **good** $(n+1)$-tuple $(h_1, h_2, \dots, h_{n+1})$ such that all $h_i$ are symmetric polynomials.
+
+---
+
+## R074
+
+Problem:
+Find all functions $f: \mathbb{R} \rightarrow \mathbb{Z}$ such that
+$$
+(f(f(y)-x))^{2}+f(x)^{2}+f(y)^{2}=f(y) \cdot(1+2 f(f(y)))
+$$
+for all $x, y \in \mathbb{R}$.
+
+---
+
+## R075
+
+Elmer the emu takes $44$ equal strides to walk between consecutive telephone poles on a rural road. Oscar the ostrich can cover the same distance in $12$ equal leaps. The telephone poles are evenly spaced, and the $41$st pole along this road is exactly one mile ($5280$ feet) from the first pole. How much longer, in feet, is Oscar's leap than Elmer's stride?
+$(A)\ 6\ \ (B)\ 8\ \ (C)\ 10\ \ (D)\ 11\ \ (E)\ 15$
+
+---
+
+## R076
+
+Prove that the number $A = \frac{4n!}{n!\ 2n!}$, where $n$ is a positive integer, is an integer and has a factor of the form $2^{n+1}$. (Note: The number $n!$ for $n \in \mathbb{N}$, is defined by: $n! = 1 \cdot 2 \cdot \dots \cdot n$, and $0! = 1$.)
+
+---
+
+## R077
+
+A simple graph is called **divisibility** if it's possible to label its vertices with positive integers such that there is an edge between two vertices if and only if the label of one vertex is divisible by the other one.
+A simple graph is called a **permutation** graph, if it's possible to label its vertices by $1, 2, \dots, n$ and there exists a permutation $\pi$ such that there is an edge between vertices $i, j$ if and only if $i > j$ and $\pi(i) < \pi(j)$ (the graph is not directed!)
+Prove that a simple graph is a permutation graph if and only if both its complement and itself are divisibility graphs.
+
+---
+
+## R078
+
+Problem:
+Trovare tutti i numeri naturali $n$ di tre cifre $(100 \leq n \leq 999)$ che sono uguali al numero formato dalle ultime tre cifre di $n^{2}$.
+
+---
+
+## R079
+
+Problem:
+
+Find the number of eight-digit positive integers that are multiples of $9$ and have all distinct digits.
+
+---
+
+## R080
+
+Problem:
+
+Um número $n$ de dois algarismos é dividido pela soma de seus algarismos, obtendo resto $r$.
+
+a. Encontre um número $n$ tal que $r=0$.
+b. Mostre que $r$ não pode ser maior que 15.
+c. Mostre que para qualquer $r$ menor ou igual a 12, existe um $n$ que deixa resto $r$ ao dividi-lo pela soma de seus algarismos.
+
+---
+
+## R081
+
+Problem:
+
+Se $3$ e $\frac{1}{3}$ são as raízes da equação $a x^{2}-6 x+c=0$, qual o valor de $a+c$?
+
+A) $1$
+B) $0$
+C) $-\frac{9}{5}$
+D) $\frac{18}{5}$
+E) $-5$
+
+---
+
+## R082
+
+Consider the squares $ABCD$ and $BEFG$, such that $B$ lies on the segment $AE$ and $G$ lies on the segment $BC$. Let $H$ be the intersection of the lines $DF$ and $EG$. The perpendicular from $H$ to the line $DF$ intersects the lines $AE$ and $BC$ at points $I$ and $J$, respectively. Prove that the quadrilateral $DIFJ$ is a square.
+Valeriu Bărbieru
+
+![](attached_image_1.png)
+
+---
+
+## R083
+
+Let $a$, $b$, $c$, $d$ be positive integers and $\log_a b = \frac{3}{2}$, $\log_c d = \frac{5}{4}$. If $a-c=9$, then $b-d=$ ________.
+
+---
+
+## R084
+
+Problem:
+
+Vind alle functies $f: \mathbb{Z}_{>0} \to \mathbb{Z}_{>0}$ zo dat voor alle positieve gehele getallen $m, n$ geldt dat
+
+$$(f(m))^2 + 2mf(n) + f(n^2)$$
+het kwadraat van een geheel getal is.
+
+---
+
+## R085
+
+Each of the lattice points $(x, y)$ ($x$ and $y$ integers) in the plane can be coloured black or white. A single strike by an L-shaped punch changes the colour of the four lattice points $(a, b)$, $(a+1, b)$, $(a, b+1)$ and $(a, b+2)$. All lattice points are initially coloured white. Prove that after any number of strikes, the number of black lattice points will be either zero or greater than or equal to four.
+
+---
+
+## R086
+
+Prove that there exists a positive integer $n > 1$ such that the product of some $n$ consecutive positive integers equals the product of some $n + 100$ consecutive positive integers.
+
+---
+
+## R087
+
+Find the minimum positive integer number which has a product of its digits equals $5120$.
+
+---
+
+## R088
+
+Problem:
+
+In un sacchetto ci sono delle biglie di vari colori. Si sa che tutte le biglie tranne 6 sono gialle, tutte le biglie tranne 7 sono rosse, tutte le biglie tranne 10 sono blu. Inoltre, c'è almeno una biglia blu e potrebbero esserci anche biglie di colori diversi da giallo, rosso e blu. Quante biglie contiene il sacchetto?
+
+(A) Non è possibile determinarlo
+(B) 11
+(C) 12
+(D) 20
+(E) 23
+
+---
+
+## R089
+
+Problem:
+
+For every positive integer $n \geq 1$ we define the matrix $A_n = (a_{ij})_{1 \leq i, j \leq n}$, where $a_{ij} = \max(i, j) / \min(i, j)$, $1 \leq i, j \leq n$. Calculate the determinant of the matrix $A_n$.
+
+---
+
+## R090
+
+A sequence of integers $a_{0}, a_{1}, a_{2}, \ldots$ is called kawaii, if $a_{0}=0, a_{1}=1$, and, for any positive integer $n$, we have
+$$
+\left(a_{n+1}-3 a_{n}+2 a_{n-1}\right)\left(a_{n+1}-4 a_{n}+3 a_{n-1}\right)=0 .
+$$
+An integer is called kawaii if it belongs to a kawaii sequence.
+Suppose that two consecutive positive integers $m$ and $m+1$ are both kawaii (not necessarily belonging to the same kawaii sequence). Prove that 3 divides $m$, and that $m / 3$ is kawaii.
+
+---
+
+## R091
+
+Let $a$, $b$, $c$ be positive real numbers with $a + b + c = 1$.
+Prove that
+$$
+\frac{a}{2a+1} + \frac{b}{3b+1} + \frac{c}{6c+1} \le \frac{1}{2}.
+$$
+When does equality hold?
+
+---
+
+## R092
+
+At a chess tournament, every pair of contestants played each other at most once. If any two contestants, $A$ and $B$, failed to play each other, then exactly two other contestants, $C$ and $D$, played against both $A$ and $B$ during the tournament. Moreover, no four contestants played exactly five games between them. Prove that every contestant played the same number of games.
+
+---
+
+## R093
+
+Una pulga salta sobre puntos enteros de la recta numérica. En su primer movimiento salta desde el punto $0$ y cae en el punto $1$. Luego, si en un movimiento la pulga saltó desde el punto $a$ y cayó en el punto $b$, en el siguiente movimiento salta desde el punto $b$ y cae en uno de los puntos $b + (b - a) - 1$, $b + (b - a)$, $b + (b - a) + 1$.
+
+Demuestre que si la pulga ha caído dos veces sobre el punto $n$, para $n$ entero positivo, entonces ha debido hacer al menos $t$ movimientos, donde $t$ es el menor entero mayor o igual que $2\sqrt{n}$.
+
+---
+
+## R094
+
+Find all $x$, $y$, $z$ which satisfy:
+$$
+\begin{cases} x^2 + x y + x z = y, \\ y^2 + y z + y x = z, \\ z^2 + z x + z y = x. \end{cases}
+$$
+
+---
+
+## R095
+
+Problem:
+Prove that:
+$$
+\frac{2}{x^{2} - 1} + \frac{4}{x^{2} - 4} + \frac{6}{x^{2} - 9} + \ldots + \frac{20}{x^{2} - 100} =
+$$
+$$
+\frac{11}{(x - 1)(x + 10)} + \frac{11}{(x - 2)(x + 9)} + \ldots + \frac{11}{(x - 10)(x + 1)}.
+$$
+
+---
+
+## R096
+
+Find all functions $f : \mathbb{N} \setminus \{1\} \rightarrow \mathbb{N}$ such that for all distinct $x, y \in \mathbb{N}$ with $y \ge 2018$,
+$$
+\gcd(f(x), y) \cdot \operatorname{lcm}(x, f(y)) = f(x)f(y)
+$$
+
+---
+
+## R097
+
+Let $G$ be a finite group, and let $x_1, \dots, x_n$ be a labeling of its elements. Consider the $n \times n$ matrix $(a_{ij})$, where $a_{ij} = 1$ if $x_i x_j^{-1} \neq x_j x_i^{-1}$, and $a_{ij} = 0$ otherwise. Establish the parity of the integer $\det(a_{ij})$.
+Amer. Math. Monthly
+
+---
+
+## R098
+
+Find the largest integer $n$ with the following property: Whenever five distinct points are given in a plane such that some two of them lie inside the triangle formed by the remaining three points, then some three of these five points can be denoted by $X, Y, Z$ such that $n^\circ < |\angle XYZ| \le 180^\circ$.
+
+---
+
+## R099
+
+Problem:
+
+Una ed una sola delle seguenti affermazioni è falsa. Quale?
+
+(A) "La (B) è falsa"
+(B) "La (C) è falsa"
+(C) "La (E) è vera"
+(D) "La (A) è vera"
+(E) "Tre delle precedenti sono vere".
+
+---
+
+## R100
+
+Problem:
+
+In triangle $ABC$, $\angle A = 45^{\circ}$ and $M$ is the midpoint of $\overline{BC}$. $\overline{AM}$ intersects the circumcircle of $ABC$ for the second time at $D$, and $AM = 2MD$. Find $\cos \angle AOD$, where $O$ is the circumcenter of $ABC$.
+
+---
+
+## R101
+
+Problem:
+Quantos números naturais de cinco algarismos têm o produto de seus algarismos igual a 2000?
+
+---
+
+## R102
+
+Problem:
+
+The function $f(n)$ is defined on the positive integers and takes non-negative integer values. It satisfies
+
+(1) $f(m n) = f(m) + f(n)$,
+
+(2) $f(n) = 0$ if the last digit of $n$ is $3$,
+
+(3) $f(10) = 0$.
+
+Find $f(1985)$.
+
+---
+
+## R103
+
+Problem:
+
+Points $A$, $M$, $N$ and $B$ are collinear, in that order, and $AM = 4$, $MN = 2$, $NB = 3$. If point $C$ is not collinear with these four points, and $AC = 6$, prove that $CN$ bisects $\angle BCM$.
+
+---
+
+## R104
+
+Let $r > 0$ be a real number. All the interior points of the disc $D(r)$ of radius $r$ are colored with one of two colors, red or blue.
+1. If $r > \frac{\pi}{\sqrt{3}}$, show that we can find two points $A$ and $B$ in the interior of the disc such that the distance $AB = \pi$ and $A$ and $B$ have the same color.
+2. Does the conclusion in (a) hold if $r > \frac{\pi}{2}$?
+
+---
+
+## R105
+
+Problem:
+
+Il polinomio $P(x)$, di grado 42, assume il valore 0 nei primi 21 numeri primi dispari e nei loro reciproci (si ricorda che il reciproco di un intero positivo $n$ è il numero razionale $1 / n$). Quanto vale il rapporto $P(2) / P(1 / 2)$?
+
+(A) 0
+(B) 1
+(C) $2^{21}$
+(D) $3^{21}$
+(E) $4^{21}$
+
+---
+
+## R106
+
+Problem:
+
+What is the smallest integer $x$ larger than $1$ such that $x^{2}$ ends in the same three digits as $x$ does?
+
+---
+
+## R107
+
+Let $A = \{1, 3, 3^2, 3^3, \dots, 3^{2014}\}$. We obtain a *partition* of $A$ if $A$ is written as a disjoint union of nonempty subsets.
+
+a) Prove that there is no partition of $A$ such that the product of elements in each subset is a square.
+
+b) Prove that there exists a partition of $A$ such that the sum of elements in each subset is a square.
+
+---
+
+## R108
+
+Problem:
+
+Dani sta točki $A$ in $B$ ter krožnica $\mathcal{K}$ s premerom $AB$. Na daljici $AB$ izberemo točko $T$ različno od $A$ in $B$. Pravokotnica na daljico $AB$ skozi točko $T$ naj seka krožnico $\mathcal{K}$ v točkah $M$ in $N$. Označimo $|AT|=x$, $|TB|=y$ in $|TN|=z$. Izračunaj vrednost izraza
+$$
+\frac{\log_{y} z + \log_{x} z}{\log_{x} z \log_{y} z}
+$$
+
+---
+
+## R109
+
+If $x - y > x$, then which of the sentences MUST be true?
+(A) $x > 0$ (B) $y < 0$ (C) $x > y$ (D) $y > 0$ (E) $x < 0$
+
+---
+
+## R110
+
+Problem:
+Aflați câte numere naturale $k \in \{1,2,3, \ldots, 2022\}$ au proprietatea că, dacă pe un cerc se scriu 2022 numere reale astfel încât suma oricăror $k$ numere aflate pe poziții consecutive este egală cu 2022, atunci toate cele 2022 de numere sunt egale.
+
+---
+
+## R111
+
+Let $n$ be a positive integer. There are $n$ islands with $n - 1$ bridges connecting them such that one can travel from any island to another. One afternoon, a fire breaks out in one of the islands. Every morning, it spreads to all neighbouring islands. (Two islands are neighbours if they are connected by a bridge.) To control the spread, one bridge is destroyed every night until the fire has nowhere to spread the next day. Let $X$ be the minimum possible number of bridges one has to destroy before the fire stops spreading. Find the maximum possible value of $X$ over all possible configurations of bridges and islands where the fire starts at.
+
+---
+
+## R112
+
+Problem:
+
+Reimu and Sanae play a game using 4 fair coins. Initially both sides of each coin are white. Starting with Reimu, they take turns to color one of the white sides either red or green. After all sides are colored, the 4 coins are tossed. If there are more red sides showing up, then Reimu wins, and if there are more green sides showing up, then Sanae wins. However, if there is an equal number of red sides and green sides, then neither of them wins. Given that both of them play optimally to maximize the probability of winning, what is the probability that Reimu wins?
+
+---
+
+## R113
+
+A strategical video game consists of a map of finitely many towns. In each town there are $k$ directions, labelled from 1 through $k$. One of the towns is designated as initial, and one – as terminal. Starting from the initial town the hero of the game makes a finite sequence of moves. At each move the hero selects a direction from the current town. This determines the next town he visits and a certain positive amount of points he receives.
+
+Two strategical video games are equivalent if for every sequence of directions the hero can reach the terminal town from the initial in one game, he can do so in the other game, and, in addition, he accumulates the same amount of points in both games.
+
+For his birthday John receives two strategical video games – one with $N$ towns and one with $M$ towns. He claims they are equivalent. Marry is convinced they are not. Marry is right. Prove that she can provide a sequence of at most $N + M$ directions that shows the two games are indeed not equivalent.
+
+Stefan Gerdjikov, Bulgaria
+
+---
+
+## R114
+
+Find all integers $n$ and $x_1, \ldots, x_n$ ($1 \le x_i \le 50$) such that
+$$ \sum_{i=1}^{n} x_i(100 - x_i) = 1515. $$
+
+---
+
+## R115
+
+The sequence of integers $\{a_n\}$, $n = 0, 1, 2, \ldots$, is defined by:
+$a_0 = 1$ and $a_n = a_{n-1} + a_{\lceil n/3 \rceil}$ for every $n = 1, 2, 3, \ldots$.
+Prove that for every prime number $p \le 13$, there exists an infinite number of natural numbers $k$ such that $a_k$ is divisible by $p$.
+([x] denotes the integral part of x).
+
+---
+
+## R116
+
+There are some direct one-way flights among $n \ge 8$ airports. Between any two airports $a$ and $b$, there is at most one direct one-way flight from $a$ to $b$ (it is possible to have direct one-way flights both from $a$ to $b$ and from $b$ to $a$). Suppose that, for any set $A$ consisting of some airports with $1 \le |A| \le n-1$, there are at least $4 \cdot \min\{|A|, n-|A|\}$ flights in total departing from the airports in $A$ and arriving at the airports not in $A$.
+Prove that for any airport $x$, one can depart from $x$ and take no more than $\sqrt{2n}$ flights to return to $x$.
+
+---
+
+## R117
+
+Let $d$ be a nonnegative integer. Determine all functions $f : \mathbb{R}^2 \to \mathbb{R}$ such that, for any real constants $A$, $B$, $C$ and $D$, $f(At+B, Ct+D)$ is a polynomial in $t$ of degree at most $d$.
+
+---
+
+## R118
+
+Let $N \ge 3$ be an odd integer. For distinct divisors $n$ and $m$ of $N$ such that $n > m$, prove that
+$$
+\frac{n}{m} \ge 1 + \frac{2m+4}{N}.
+$$
+
+---
+
+## R119
+
+Problem:
+
+The Wonder Island Intelligence Service has 16 spies in Tartu. Each of them watches on some of his colleagues. It is known that if spy $A$ watches on spy $B$ then $B$ does not watch on $A$. Moreover, any 10 spies can be numbered in such a way that the first spy watches on the second, the second watches on the third, .., the tenth watches on the first. Prove that any 11 spies can also be numbered in a similar manner.
+
+---
+
+## R120
+
+Let positive integers $K$ and $d$ be given. Prove that there exists a positive integer $n$ and a sequence of $K$ positive integers $b_1, b_2, \dots, b_K$ such that the number $n$ is a $d$-digit palindrome in all number bases $b_1, b_2, \dots, b_K$.
+
+---
+
+## R121
+
+Problem:
+
+Mr. Canada chooses a positive real $a$ uniformly at random from $(0,1]$, chooses a positive real $b$ uniformly at random from $(0,1]$, and then sets $c = a / (a + b)$. What is the probability that $c$ lies between $1/4$ and $3/4$?
+
+---
+
+## R122
+
+Let $M$ be a subset of $\{1, 2, \dots, 2006\}$ with the following property: For any three elements $x, y$ and $z$ ($x < y < z$) of $M$, $x + y$ does not divide $z$. Determine the largest possible size of $M$. Justify your claim.
+
+---
+
+## R123
+
+Problem:
+
+Dez pontos são dados no plano e não existem três colineares. Quatro segmentos distintos ligando pares destes pontos são escolhidos ao acaso, mas todos com a mesma probabilidade. Qual é a probabilidade de três dos segmentos escolhidos formarem um triângulo?
+
+---
+
+## R124
+
+Problem:
+
+Queremos cobrir um tabuleiro quadriculado com certas pecinhas sem sobreposição e de modo que nenhuma parte delas fique fora do tabuleiro. Usaremos pecinhas, formadas por quadradinhos, chamadas L-triminós e I-triminós e que podem ser rotacionadas nas posições descritas na figura a seguir.
+
+![](attached_image_1.png)
+
+Para provar que é possível realizar uma cobertura, basta mostrar uma maneira de posicionar as pecinhas. Por outro lado, para provar que não é possível realizar alguma cobertura, nem sempre é conveniente testar todas as configurações possíveis de peças e muitas vezes precisamos esboçar argumentos engenhosos. Por exemplo, provaremos que não é possível cobrir um tabuleiro $3 \times 3$ usando apenas L-triminós.
+
+![](attached_image_2.png)
+
+Observe os quadradinhos pintados da figura. São 4 quadradinhos e não é possível cobrir dois deles usando um mesmo L-triminó. Assim, para cobrir os 4 quadradinhos teríamos que usar pelo menos $4 \mathrm{~L}$-triminós, mas isso resultaria em $4 \cdot 3=12$ quadradinhos cobertos, que claramente excede o total de 9 quadradinhos do tabuleiro inteiro. Portanto, não é possível cobrir o tabuleiro $3 \times 3$ com L-triminós.
+
+a) Mostre uma maneira de cobrir um tabuleiro $3 \times 4$ usando apenas L-triminós.
+
+b) Prove que não é possível cobrir um tabuleiro $3 \times 5$ usando apenas L-triminós.
+
+c) É possível cobrir o $3 \times 5$ usando exatamente um I-triminó e alguns L-triminós. Determine as posições que o I-triminó pode ocupar de modo que o resto do tabuleiro possa ser coberto com L-triminós.
+
+---
+
+## R125
+
+Problem:
+
+The edges of a graph with $2n$ vertices, $n \geq 4$, are colored in blue and red such that there is no blue triangle and there is no red complete subgraph with $n$ vertices. Find the least possible number of the blue edges.
+
+---
+
+## R126
+
+The point $P$ is chosen in the interior of the isosceles trapezoid $ABCD$, where $AB \parallel CD$, such that $\angle APB > \angle ADC$ and $\angle DPC > \angle ABC$. Prove that $AB + CD > AD + BC$.
+
+---
+
+## R127
+
+Does there exist a scalene triangle whose incenter, circumcenter and orthocenter are collinear?
+
+---
+
+## R128
+
+Let $n \ge 2$ be a positive integer. For any integer $a$, let $Q_a(x)$ denote the polynomial $x^n + ax$. Let $p$ be a prime number and $S_a$ be the set
+$$
+S_a = \{b \mid 0 \le b \le p-1, \exists c \in \mathbb{Z}, Q_a(c) \equiv b \pmod{p}\}.
+$$
+Show that the expression $\frac{1}{p-1} \sum_{a=1}^{p-1} |S_a|$ is an integer.
+
+---
+
+## R129
+
+(a) For which triangles with sides of length $a$, $b$ and $c$ do the inequalities $a^2 + b^2 > c^2$, $b^2 + c^2 > a^2$ and $a^2 + c^2 > b^2$ hold (along with the usual triangle inequalities $a+b>c$, $b+c>a$ and $c+a>b$)?
+
+(b) For which triangles with sides of length $a$, $b$ and $c$ do the inequalities $a^n + b^n > c^n$, $b^n + c^n > a^n$ and $a^n + c^n > b^n$ hold for all positive integers $n$ (along with the usual triangle inequalities $a+b>c$, $b+c>a$ and $c+a>b$)?
+
+---
+
+## R130
+
+Vitya and Masha play the game. First, Vitya thinks of three different integers. Then Masha can ask one of the following quantities: either the sum of the numbers, or the sum of pairwise products of the numbers, or the product of the numbers suggested by Vitya. Masha asks questions sequentially, and Vitya gives an answer before the next question is asked.
+
+a) Prove that Masha can always determine Vitya's numbers.
+
+b) What is the least number of questions Masha need to do this for sure, no matter what numbers Vitya guessed?
+
+---
+
+## R131
+
+令 $R$ 表示所有實數所成的集合。試求所有的函數 $f: R \to R$ 使得對所有的實數 $x, y$,
+$$
+f(xf(y) - f(x) - y) = yf(x) - f(y) - x \text{ 皆成立。}
+$$
+
+---
+
+## R132
+
+Problem:
+
+FemtoPravis is walking on an $8 \times 8$ chessboard that wraps around at its edges (so squares on the left edge of the chessboard are adjacent to squares on the right edge, and similarly for the top and bottom edges). Each femtosecond, FemtoPravis moves in one of the four diagonal directions uniformly at random. After 2012 femtoseconds, what is the probability that FemtoPravis is at his original location?
+
+---
+
+## R133
+
+Find all pairs of primes $p$, $q$ for which there exists a positive integer $a$ such that
+$$
+\frac{pq}{p+q} = \frac{a^2+1}{a+1}.
+$$
+
+---
+
+## R134
+
+a) Prove that $2^n + 3^n + 5^n + 8^n$ is not a perfect square for any positive integer $n$.
+
+b) Find all positive integers $n$ so that $1^n + 4^n + 6^n + 7^n = 2^n + 3^n + 5^n + 8^n$.
+
+---
+
+## R135
+
+Let $(a_n)_{n \ge 1}$ be a sequence of real positive numbers, such that the sequence $(a_{n+1} - a_n)_{n \ge 1}$ converges to a non-zero limit. Compute the limit
+$$
+\lim_{n \to \infty} \left( \frac{a_{n+1}}{a_n} \right)^n .
+$$
+
+---
+
+## R136
+
+Find the smallest constant $a > 1$, such that for any point $P$ inside a square $ABCD$ there exist two triangles among $\triangle PAB$, $\triangle PBC$, $\triangle PCD$, $\triangle PDA$, with the ratio between their areas belonging to the interval $[a^{-1}, a]$. (Posed by Li Weigu)
+
+---
+
+## R137
+
+Problem:
+Zwei Kreise $k_{1}$ und $k_{2}$ schneiden sich in $A$ und $B$. Sei $r$ eine Gerade durch $B$, die $k_{1}$ in $C$ und $k_{2}$ in $D$ schneidet, so dass $B$ zwischen $C$ und $D$ liegt. Sei $s$ die Gerade parallel zu $A D$, die $k_{1}$ in $E$ berührt und zu $A D$ den kleinstmöglichen Abstand hat. Die Gerade $A E$ schneidet $k_{2}$ in $F$. Sei $t$ die Tangente zu $k_{2}$ durch $F$. Beweise dass gilt:
+(a) Die Gerade $t$ ist parallel zu $A C$.
+(b) Die Geraden $r, s$ und $t$ schneiden sich in einem Punkt.
+
+---
+
+## R138
+
+Problem:
+
+Abelarda, Brunilda e Callisto, tre vecchi conoscenti, vogliono comprare una casa a testa tra le 10 casette in fila sulla via principale della città. Siccome non si sopportano, vogliono assolutamente evitare di essere vicini di casa: desiderano perciò che le case che acquistano siano due a due non adiacenti. In quanti modi possono comprare casa in modo da soddisfare questa condizione?
+(A) 56
+(B) 120
+(C) 336
+(D) 480
+(E) 504
+
+---
+
+## R139
+
+Problem:
+
+(1) $r_1, r_2, \ldots, r_{100}, c_1, c_2, \ldots, c_{100}$ are distinct reals. The number $r_i + c_j$ is written in position $i, j$ of a $100 \times 100$ array. The product of the numbers in each column is $1$. Show that the product of the numbers in each row is $-1$.
+
+(2) $r_1, r_2, \ldots, r_{2n}, c_1, c_2, \ldots, c_{2n}$ are distinct reals. The number $r_i + c_j$ is written in position $i, j$ of a $2n \times 2n$ array. The product of the numbers in each column is the same. Show that the product of the numbers in each row is also the same.
+
+---
+
+## R140
+
+Let $p \ge 2$ be a prime number. Alice and Bob play the following game: they, in turn, select an index $i$ in the set $\{0, 1, 2, \dots, p-1\}$ that was not selected before by either of the two players and then chooses a digit $a_i$. Alice starts. The game ends after all the indices have been selected. The goal of Alice is to make the number
+$$
+M = a_0 + 10 \cdot a_1 + 10^2 \cdot a_2 + \dots + 10^{p-1} a_{p-1}
+$$
+divisible by $p$, and the goal of Bob is to prevent this.
+Prove that Alice has the winning strategy.
+
+---
+
+## R141
+
+Let $c$ be a non-negative integer. Find all sequences of positive integers $\{a_n\}_{n \ge 1}$ such that for any positive integer $n$, the following condition holds:
+There are exactly $a_n$ positive integers $i$ satisfying $a_i \le a_{n+1} + c$.
+
+---
+
+## R142
+
+A function $f$ maps every positive real number to a positive real number. There is a constant $c \neq 1$ such that $f(cx)^2 = f(x)f(c^2x)$ for all positive real numbers $x$. Must the same equality hold for any positive real numbers $c$ and $x$?
+
+---
+
+## R143
+
+Determine ten's place of $11^{12^{13}}$. ($12^{13}$th power of $11$, not $13$th power of $11^{12}$.)
+
+---
+
+## R144
+
+Problem:
+
+Per rubare un prezioso gioiello, un ladro deve scoprire il codice che permette di aprire la porta della cassaforte. Le informazioni che è riuscito a carpire sono le seguenti:
+- il codice è un numero
+- qualsiasi sottosequenza di cifre consecutive del codice (dunque sia ogni cifra presa singolarmente, che ogni coppia di cifre, etc. fino a tutto il numero) rappresenta un numero primo (ad esempio, 217 non va bene, perché 1 non è un primo e 21 non è un primo)
+- il codice è il numero più grande che abbia questa proprietà.
+Qual è il codice segreto per aprire la cassaforte?
+
+---
+
+## R145
+
+Problem:
+
+In einem Tennistournier haben mindestens drei Spieler teilgenommen. Dabei haben je zwei Spieler genau einmal gegeneinander gespielt, und jeder Spieler hat mindestens ein Match gewonnen. Zeige, dass es drei Spieler $A, B, C$ gibt, sodass $A$ gegen $B$, $B$ gegen $C$ und $C$ gegen $A$ gewonnen hat.
+
+---
+
+## R146
+
+設 $ABCD$ 為凸四邊形, 點 $P, Q, R, S$ 分別在邊 $AB, BC, CD, DA$ 邊上。直線 $PR$ 與 $QS$ 交於 $O$ 點。設四個四邊形 $APOS, BQOP, CROQ, DSOR$ 都有內切圓。證明：直線 $AC, PQ, RS$ 共點或是兩兩互相平行。
+
+Let $ABCD$ be a convex quadrilateral, and let $P, Q, R, S$ be points on the sides of $AB, BC, CD, and DA$, respectively. Let the line segments $PR$ and $QS$ meet at $O$. Suppose that each of the quadrilaterals $APOS, BQOP, CROQ, and DSOR$ has an incircle. Prove that the lines $AC, PQ, and RS$ are either concurrent or parallel to each other.
+
+---
+
+## R147
+
+2009 weights are placed in a row. Each weight is of integer number of grams, and no weight is heavier than 1 kg. It turned out that each neighboring weights differ by exactly 1 g, while the total weight of all weights (in grams) is an even number. Prove that it is possible to partition all the weights into two sets with equal total weights.
+
+В ряду из 2009 гирек вес каждой гирьки составляет целое число граммов и не превышает 1 кг. Веса любых двух соседних гирек отличаются ровно на 1 г, а общий вес всех гирь в граммах является чётным числом. Докажите, что гирьки можно разделить на две кучки, суммы весов в которых равны.
+
+---
+
+## R148
+
+Problem:
+
+Soit $ABC$ un triangle, $H$ le pied de la hauteur issue de $A$, $L$ le pied de la bissectrice issue de $B$ et $M$ le milieu de $[AB]$. On suppose que dans le triangle $HLM$ on a les deux propriétés : $(AH)$ est une hauteur et $(BL)$ est une bissectrice. Montrer que $(CM)$ est une médiane.
+
+---
+
+## R149
+
+We have $n$ students sitting at a round table. Initially each student is given one candy. At each step each student having candies either picks one of its candies and gives it to one of its neighbouring students, or distributes all of its candies to its neighbouring students in any way he wishes. A distribution of candies is called legal if it can be reached from the initial distribution via a sequence of steps.
+Determine the number of legal distributions. (All the candies are identical.)
+
+---
+
+## R150
+
+Let $\mathbb{Z}/n\mathbb{Z}$ denote the set of integers considered modulo $n$ (hence $\mathbb{Z}/n\mathbb{Z}$ has $n$ elements). Find all positive integers $n$ for which there exists a bijective function $g: \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$, such that the 101 functions
+$$
+g(x),\ g(x) + x,\ g(x) + 2x,\ \dots,\ g(x) + 100x
+$$
+are all bijections on $\mathbb{Z}/n\mathbb{Z}$.
+
+---
+
+## R151
+
+Determine complex numbers $z$ verifying $z^{3n} + \bar{z}^{3n} \ge 0$, for any non-negative integer $n$.
+
+---
+
+## R152
+
+Problem:
+
+Giovanni disegna a matita un 9-agono regolare e collega ciascuno dei suoi vertici al centro, tracciando un totale di 18 segmenti e ottenendo in questo modo nove triangoli. Ripassa quindi a penna alcuni dei segmenti tracciati, facendo in modo che alla fine ognuno dei nove triangoli abbia esattamente un lato ripassato a penna. In quanti modi Giovanni può scegliere l'insieme dei segmenti da ripassare? (Nota: due insiemi di segmenti che si ottengano l'uno dall'altro per rotazione o per simmetria sono da considerarsi distinti.)
+(A) 49
+(B) 65
+(C) 74
+(D) 76
+(E) 85
+
+---
+
+## R153
+
+Given a set of 2016 distinct points in the plane, show that we can choose a "circle of evil" $C$ in the plane such that exactly 666 of these points lie strictly inside $C$, and none of them lies on $C$.
+
+---
+
+## R154
+
+Consider a set of integers $M$, having the properties:
+i) $1$ belongs to $M$;
+ii) if $x$ and $y$ are in $M$, then $2x + 3y$ is in $M$;
+iii) if $x, y$ are integers such that $4x - 3y$ belongs to $M$, then $x \cdot y$ belongs to $M$.
+Prove that $M$ contains the numbers $2$, $3$, $4$, $5$ and $2019$.
+
+---
+
+## R155
+
+設 $C_1$ 及 $C_2$ 為兩同心圓, 其中 $C_2$ 在 $C_1$ 內部。從 $C_1$ 上一點 $A$ 向 $C_2$ 引切線 $AB$, 且點 $B$ 在 $C_2$ 上。令點 $C$ 為射線 $AB$ 與 $C_1$ 的另一個交點, 而點 $D$ 為 $\overline{AB}$ 的中點。作一條過 $A$ 的直線與 $C_2$ 交於 $E, F$ 兩點, 使得 $DE$ 的中垂線與 $CF$ 的中垂線交於 $AB$ 上的一點 $M$。試求 $AM/MC$ 的所有可能值。
+
+---
+
+## R156
+
+Problem:
+
+Show that there is a number $1 < b < 1993$ such that if $1994$ is written in base $b$ then all its digits are the same. Show that there is no number $1 < b < 1992$ such that if $1993$ is written in base $b$ then all its digits are the same.
+
+---
+
+## R157
+
+Problem:
+
+Numa sequência, cada termo, a partir do terceiro, é a soma dos dois termos imediatamente anteriores, o segundo termo é 1 e o quinto termo é 2005. Qual é o sexto termo?
+
+A) 3002
+B) 3008
+C) 3010
+D) 4002
+E) 5004
+
+---
+
+## R158
+
+Mari chooses five distinct positive integers not greater than $2021$. From these five numbers, it must be possible to choose two numbers with sum $1919$ in two different ways. Likewise, from these five numbers, it must be possible to choose two numbers with sum $2929$ in two different ways. Find all possibilities of which five numbers Mari may choose.
+
+---
+
+## R159
+
+Let $a$ be a positive integer. Denote by $\tau(a)$ and $\varphi(a)$ respectively the number of all positive integers that divide $a$ and the number of all positive integers not greater than $a$ and relatively prime to $a$. Find all positive integers $n$ having only two prime divisors and such that $\varphi(\tau(n)) = \tau(\varphi(n))$.
+
+---
+
+## R160
+
+Let $q$ be a real number. Gugu has a napkin with ten distinct real numbers written on it, and he writes the following three lines of real numbers on the blackboard:
+- In the first line, Gugu writes down every number of the form $a-b$, where $a$ and $b$ are two (not necessarily distinct) numbers on his napkin.
+- In the second line, Gugu writes down every number of the form $q a b$, where $a$ and $b$ are two (not necessarily distinct) numbers from the first line.
+- In the third line, Gugu writes down every number of the form $a^{2}+b^{2}-c^{2}-d^{2}$, where $a, b, c, d$ are four (not necessarily distinct) numbers from the first line.
+Determine all values of $q$ such that, regardless of the numbers on Gugu's napkin, every number in the second line is also a number in the third line.
+
+---
+
+## R161
+
+Suppose there are $2019$ distinct points in a plane and the distances between pairs of them attain $k$ different values. Prove that $k$ is at least $44$.
+
+---
+
+## R162
+
+On the side $AB$ of a triangle $ABC$, let $D$ be a point such that $\angle BDC = \angle ACB$. Let $K$ be the midpoint of $CD$ and let $E$ be the intersection of lines $BK$ and $AC$. Given that $\angle BKD = 2\angle BCD$, find $\angle AEB$.
+
+---
+
+## R163
+
+Let $A B \Gamma$ be an isosceles acute angled triangle with $AB = A\Gamma$. Let $\Gamma\Delta$ be an altitude of the triangle. The circle $c_2(\Gamma, \Gamma\Delta)$ intersects $A\Gamma$ at point $K$, the extension of $A\Gamma$ at point $Z$ and the circle $c_1(B, B\Delta)$ at point $E$. Finally, $\Delta Z$ intersects the circle $c_1$ at point $M$. Prove that
+
+a. $Z\hat{\Delta}E = 45^\circ$
+
+b. The points $E$, $M$, and $K$ are collinear.
+
+c. The line $BM$ is parallel to the line $E\Gamma$.
+
+---
+
+## R164
+
+Bruno elige un número entero positivo $X$. A continuación, Flor elige cuatro números enteros $a, b, c, d$ y calcula $N = (a-b)(b-c)(c-d)(d-a)(a-c)(b-d)$, la multiplicación de las seis diferencias entre esos cuatro números. Determinar el mayor valor de $X$ con el que Bruno tiene la certeza de que $N$ será múltiplo de $X$.
+
+---
+
+## R165
+
+Problem:
+
+Sexta-feira 13 - Qual o número máximo de sexta-feiras 13 que podem ocorrer num ano não bissexto? Neste caso, qual é o $10^{\circ}$ dia do ano?
+
+---
+
+## R166
+
+Consider 70-digit numbers $n$, with the property that each of the digits $1, 2, 3, \dots, 7$ appears in the decimal expansion of $n$ ten times (and $8$, $9$, and $0$ do not appear). Show that no number of this form can divide another number of this form.
+
+---
+
+## R167
+
+En el pizarrón hay escrito un número de 100 dígitos con los últimos tres dígitos de la derecha iguales a $999$. Debajo de este número, y usando exactamente los mismos dígitos, pero en otro orden, Luciano escribe un nuevo número de 100 dígitos: deja los tres últimos $999$, e intercambia a voluntad los primeros $97$ dígitos. Esta operación la repite una y otra vez, hasta tener escritos en el pizarrón $99$ números de $100$ dígitos. A continuación, suma esos $99$ números, y al resultado lo divide por $72$. Calcular el resto de la división que hizo Luciano.
+
+---
+
+## R168
+
+The quadrilateral $ABCD$ is inscribed in the circle $k$. The lines $AC$ and $BD$ meet in $E$ and the lines $AD$ and $BC$ meet in $F$. Show that the line through the incenters of $\triangle ABE$ and $\triangle ABF$ and the line through the incenters of $\triangle CDE$ and $\triangle CDF$ meet on $k$.
+
+---
+
+## R169
+
+Problem:
+
+A student writes the six complex roots of the equation $z^{6} + 2 = 0$ on the blackboard. At every step, he randomly chooses two numbers $a$ and $b$ from the board, erases them, and replaces them with $3ab - 3a - 3b + 4$. At the end of the fifth step, only one number is left. Find the largest possible value of this number.
+
+---
+
+## R170
+
+Problem:
+
+An acute-angled triangle $A B C$ is given. Let $E$ be a point such that $B$ and $E$ lie on different sides of the line $A C$, and let $D$ be an interior point of the segment $A E$. Suppose that $\angle A D B = \angle C D E$, $\angle B A D = \angle E C D$ and $\angle A C B = \angle E B A$. Prove that $B, C$ and $E$ are collinear.
+
+---
+
+## R171
+
+There are three runners in different vertices of an equilateral triangle with side $1$: First, Second and Third. They start moving simultaneously in the same direction (Second in First's direction, Third in Second's direction, First in Third's direction). Is it necessary that they all meet in one point at the same time, if:
+
+a) First, Second and Third have velocity $2008$, $2009$ and $2010$ respectively?
+
+b) They are moving with distinct natural velocities?
+
+---
+
+## R172
+
+A gardener Andres wants to plant one currant bush to each cell of his garden of shape $24 \times 2024$. He wants to plant as many blackcurrant bushes as possible under the following conditions: There must be at least one redcurrant and at least one whitecurrant bush, and for any cell with a blackcurrant bush, cells that have a common side with it must contain equally many redcurrant and whitecurrant bushes (maybe also 0 of both). Find the largest number of blackcurrant bushes Andres can plant.
+
+---
+
+## R173
+
+Problem:
+
+Dans le plan on se donne 2011 points deux à deux distincts colorés soit en bleu, soit en rouge.
+
+a. On suppose que pour tout point bleu le disque de centre ce point et de rayon 1 contienne exactement deux points rouges. Quel est le plus grand nombre possible de points bleus?
+
+b. On suppose que pour tout point bleu le cercle de centre ce point et de rayon 1 contienne exactement deux points rouges. Quel est le plus grand nombre possible de points bleus?
+
+---
+
+## R174
+
+Problem:
+
+Do there exist 4 vectors in the plane so that none is a multiple of another, but the sum of each pair is perpendicular to the sum of the other two? Do there exist 91 non-zero vectors in the plane such that the sum of any 19 is perpendicular to the sum of the others?
+
+---
+
+## R175
+
+Problem:
+
+Es sei $B$ ein beliebiger Punkt auf einem Kreis $k_{1}$ und es sei $A$ ein von $B$ verschiedener Punkt auf der Tangente an $k_{1}$ in $B$. Ferner sei $C$ ein Punkt außerhalb von $k_{1}$ mit der Eigenschaft, dass die Strecke $A C$ den Kreis $k_{1}$ in zwei verschiedenen Punkten schneidet. Schließlich sei $k_{2}$ der Kreis, der die Gerade $A C$ in $C$ berührt und den Kreis $k_{1}$ in einem Punkt $D$ berührt, welcher auf der anderen Seite von $A C$ liegt wie $B$.
+Man beweise, dass der Umkreismittelpunkt des Dreiecks $BCD$ auf dem Umkreis des Dreiecks $A B C$ liegt.
+
+---
+
+## R176
+
+In one magic country there are only banknotes of nominal 3, 25 and 80 hryvnyas. Businessman Victor ate in a restaurant of this country for 2024 days in a row, and each day he paid (without change) exactly 1 hryvnya more than the previous one. Is it possible that he paid exactly a million banknotes?
+
+---
+
+## R177
+
+Problem:
+Evaluate the sum
+$$
+\sum_{k=1}^{\infty}\left(\prod_{i=1}^{k} \frac{P_{i}-1}{P_{i+1}}\right)=\frac{1}{3}+\frac{1}{3} \cdot \frac{2}{5}+\frac{1}{3} \cdot \frac{2}{5} \cdot \frac{4}{7}+\frac{1}{3} \cdot \frac{2}{5} \cdot \frac{4}{7} \cdot \frac{6}{11}+\ldots
+$$
+where $P_{n}$ denotes the $n^{\text{th}}$ prime number.
+
+---
+
+## R178
+
+Problem:
+Show that, for all integers $n$, $n^{2} + 2n + 12$ is not a multiple of $121$.
+
+---
+
+## R179
+
+Problem:
+
+Tim and Allen are playing a match of tenus. In a match of tenus, the two players play a series of games, each of which is won by one of the two players. The match ends when one player has won exactly two more games than the other player, at which point the player who has won more games wins the match. In odd-numbered games, Tim wins with probability $3/4$, and in the even-numbered games, Allen wins with probability $3/4$. What is the expected number of games in a match?
+
+---
+
+## R180
+
+Let $m$ be a positive integer, $n = 2^m - 1$, and $P_n = \{1, 2, \dots, n\}$ be the set of $n$ points on the number axis. A grasshopper jumps between adjacent points on $P_n$. Find the maximal number of $m$ such that for any $x, y \in P_n$, the number of ways that a grasshopper jumping from $x$ to $y$ by 2012 steps is even (passing $x$ or $y$ on the way is permitted). (posed by Zhang Sihui)
+
+---
+
+## R181
+
+$(1+x)^n$ олон гишүүнтийн тэгш коэффициенттэй гишүүдийг дарахад үлдэх олон гишүүнтийг $Q_n(x)$ гэе. $Q_{2012}(1)$-ийг ол.
+
+---
+
+## R182
+
+Problem:
+
+Find the smallest positive integer $n$ for which we can find an integer $m$ such that $\left[ \dfrac{10^n}{m} \right] = 1989$.
+
+---
+
+## R183
+
+Problem:
+a) Encontre a soma dos dígitos de $99 \cdot 33$.
+b) Usando $999999=10^{6}-1$, encontre a soma dos dígitos de $999999 \cdot 333333$.
+c) Encontre a soma dos dígitos de $999\ldots999 \cdot 333\ldots333$, em que cada dígito nos fatores anteriores aparece 2018 vezes.
+
+---
+
+## R184
+
+Let $n \ge 1$ be an integer and consider the sum
+$$
+x = \sum_{k \ge 0} \binom{n}{2k} 2^{n-2k} 3^k = \binom{n}{0} 2^n + \binom{n}{2} 2^{n-2} \cdot 3 + \binom{n}{4} 2^{n-4} \cdot 3^2 + \dots
+$$
+Show that $2x - 1$, $2x$, $2x + 1$ form the sides of a triangle whose area and inradius are also integers.
+
+---
+
+## R185
+
+Does there exist a geometric progression, among the members of which there are
+
+a. $3$, $45$ and $2025$;
+
+b. $3$, $\frac{45}{\sqrt{5}}$ and $2025$?
+
+---
+
+## R186
+
+Let $a, b, c$ be real numbers, representing the side lengths of a triangle. Prove that
+$$ 4(a + b)(a + c)(b + c) \ge (a + b + c)^3. $$
+
+---
+
+## R187
+
+Problem:
+From the $x y$-plane, select five distinct points that have integer coordinates. Find the probability that there is a pair of points among the five whose midpoint has integer coordinates.
+
+---
+
+## R188
+
+Define $f, g, h$ on $\mathbb{Z} \times \mathbb{Z} \times \mathbb{Z}$ as follows:
+$$
+f(x, y, z) = (3x + 2y + 2z, 2x + 2y + z, 2x + y + 2z),
+$$
+$$
+g(x, y, z) = (3x + 2y - 2z, 2x + 2y - z, 2x + y - 2z),
+$$
+$$
+h(x, y, z) = (3x - 2y + 2z, 2x - y + 2z, 2x - 2y + z).
+$$
+Given a primitive Pythagorean triplet $(x, y, z)$, with $x > y > z$, prove that starting from $(5, 4, 3)$, the triplet $(x, y, z)$ can be obtained, in a unique way, by repeated application of $f, g, h$ in some order. (Example: $(697, 528, 455) = f \circ h \circ g \circ h(5, 4, 3)$.)
+
+---
+
+## R189
+
+Problem:
+
+Fie $a, b \in \mathbb{C}$. Să se arate că $|a z + b \bar{z}| \leq 1$, pentru orice $z \in \mathbb{C}$, cu $|z| = 1$, dacă şi numai dacă $|a| + |b| \leq 1$.
+
+---
+
+## R190
+
+Let $ABC$ be a triangle inscribed into a circle $\Omega$ with center $O$. A circle $\Gamma$ with center $A$ meets the side $BC$ at points $D$ and $E$ such that $D$ lies between $B$ and $E$. Moreover, let $F$ and $G$ be the common points of $\Gamma$ and $\Omega$. We assume that $F$ lies on the arc $AB$ of $\Omega$ not containing $C$, and $G$ lies on the arc $AC$ of $\Omega$ not containing $B$. The circumcircles of the triangles $BDF$ and $CEG$ meet the sides $AB$ and $AC$ again at $K$ and $L$, respectively. Suppose that the lines $FK$ and $GL$ are distinct and intersect at $X$. Prove that the points $A$, $X$, and $O$ are collinear.
+
+![](attached_image_1.png)
+Figure 1
+
+---
+
+## R191
+
+Problem:
+
+Arnold and Kevin are playing a game in which Kevin picks an integer $1 \leq m \leq 1001$, and Arnold is trying to guess it. On each turn, Arnold first pays Kevin 1 dollar in order to guess a number $k$ of Arnold's choice. If $m \geq k$, the game ends and he pays Kevin an additional $m-k$ dollars (possibly zero). Otherwise, Arnold pays Kevin an additional 10 dollars and continues guessing.
+
+Which number should Arnold guess first to ensure that his worst-case payment is minimized?
+
+---
+
+## R192
+
+A die is an unitary cube with numbers from $1$ to $6$ written on its faces, so that each number appears once and the sum of the numbers on any two opposite faces is $7$. We construct a large $3 \times 3 \times 3$ cube using $27$ dice. Find all possible values of the sum of numbers which can be seen on the faces of the large cube.
+
+---
+
+## R193
+
+Liselotte has a collection of $100$ candies, which are either sweet or bitter.
+She wants to choose between the following possibilities.
+
+I) She eats half of the sweet candies. The rest is kept in the bag.
+
+II) She eats half of the bitter candies. The rest is kept in the bag.
+The part of the remaining candies in case I that are bitter is three times as large as the part of remaining candies in case II that are bitter.
+How many bitter candies does the bag contain (before Liselotte eats any of them)?
+
+---
+
+## R194
+
+In a triangle $ABC$, we suppose that points $D$ and $E$ lie on the segments $AB$ and $AC$, respectively. Let $D$, $B$, $C$, $E$ lie on the same circumference and let point $P$ lie inside quadrilateral $DBCE$ with $\angle BDP = \angle BPC = \angle PEC$. Calculate $\frac{BP}{CP}$, given that $AB = 9$, $AC = 11$, $DP = 1$ and $EP = 3$.
+
+---
+
+## R195
+
+Problem:
+
+All the points with integer coordinates in the $x y$-plane are coloured using three colours, red, blue and green, each colour being used at least once. It is known that the point $(0,0)$ is coloured red and the point $(0,1)$ is coloured blue. Prove that there exist three points with integer coordinates of distinct colours which form the vertices of a right-angled triangle.
+
+---
+
+## R196
+
+Problem:
+
+Um atleta corre $5000~\mathrm{m}$ por semana em uma quadra de esportes, que tem uma pista curta e outra longa. Em uma semana ele treinou seis dias, sendo que a cada dia correu uma vez na pista longa e duas na pista curta. Na semana seguinte ele treinou sete dias, sendo que a cada dia correu uma vez em cada pista. Podemos então afirmar que:
+A) a pista longa é três vezes maior que a curta.
+B) a pista longa é quatro vezes maior que a curta.
+C) a pista longa é cinco vezes maior que a curta.
+D) a pista longa é $600~\mathrm{m}$ mais longa que a curta.
+E) a pista longa é $500~\mathrm{m}$ mais longa que a curta.
+
+---
+
+## R197
+
+Determine all $z \in \mathbb{C}$ such that $|z| = |z+1| = \left|\frac{1}{z}\right|$.
+
+---
+
+## R198
+
+Emerald wrote on the blackboard all the integers from $1$ to $2011$. Then she erased all the even numbers.
+
+a. How many numbers were left on the board?
+
+b. How many of the remaining numbers were written with only the digits $0$ and $1$?
+
+---
+
+## R199
+
+Is it possible to subdivide a convex $2014$-gon, by means of diagonals that do not intersect, into triangles, in such a way that each vertex be incident to an odd number of triangles?
+
+---
+
+## R200
+
+Problem:
+
+Нека је
+$$
+S_{n} = \left\{ \binom{n}{n}, \binom{2n}{n}, \binom{3n}{n}, \ldots, \binom{n^{2}}{n} \right\}, \quad \text{за } n \in \mathbb{N}
+$$
+
+a) Доказати да постоји бесконачно много сложених природних бројева $n$ таквих да $S_{n}$ није потпун систем остатака по модулу $n$.
+
+б) Доказати да постоји бесконачно много сложених природних бројева $n$ таквих да $S_{n}$ јесте потпун систем остатака по модулу $n$.
+
+---
+
+## R201
+
+Inaya puts $88$ fours in a row and gets a very big number:
+$$
+\underbrace{4444\cdots4444}_{\text{88 fours}}
+$$
+She writes the fours as a plus sign with a slash in the upper left corner. When she removes that slash, she gets a plus sign. So she can make additions like
+$$
+44444444+44\cdots44444444
+$$
+The addition may not begin or end with a plus sign. By cleverly choosing at which of the $88$ fours she removes the slash, Inaya makes an addition with the result being $4444$.
+In how many fours did she remove the slash?
+A) $4$
+B) $11$
+C) $22$
+D) $29$
+E) $30$
+
+---
+
+## R202
+
+Problem:
+Find two lines of symmetry of the graph of the function $y = x + \frac{1}{x}$. Express your answer as two equations of the form $y = a x + b$.
+
+---
+
+## R203
+
+Let be given positive numbers $a, b, c$. Prove that:
+$$
+\frac{a}{2a^2 + b^2 + c^2} + \frac{b}{2b^2 + c^2 + a^2} + \frac{c}{2c^2 + a^2 + b^2} \le \frac{9}{4(a+b+c)}
+$$
+
+---
+
+## R204
+
+Problem:
+Let $a_{0} = -2$, $b_{0} = 1$, and for $n \geq 0$, let
+$$
+\begin{aligned}
+& a_{n+1} = a_{n} + b_{n} + \sqrt{a_{n}^{2} + b_{n}^{2}} \\
+& b_{n+1} = a_{n} + b_{n} - \sqrt{a_{n}^{2} + b_{n}^{2}}
+\end{aligned}
+$$
+Find $a_{2012}$.
+
+---
+
+## R205
+
+Problem:
+
+a, b, c, d, e are positive reals. Show that $$(a + b + c + d + e)^2 \geq 4(ab + bc + cd + de + ea)$$
+
+---
+
+## R206
+
+Problem:
+A square of side length $1$ is dissected into two congruent pentagons. Compute the least upper bound of the perimeter of one of these pentagons.
+
+---
+
+## R207
+
+Problem:
+
+Zlatan has $2017$ socks of various colours. He wants to proudly display one sock of each of the colours, and he counts that there are $N$ ways to select socks from his collection for display. Given this information, what is the maximum value of $N$?
+
+---
+
+## R208
+
+記所有正實數所成的集合為 $\mathbb{R}_+$。試找出所有函數 $f : \mathbb{R}_+ \to \mathbb{R}_+$, 使得
+$$
+f(xy + x + y) + f\left(\frac{1}{x}\right) f\left(\frac{1}{y}\right) = 1
+$$
+
+$$
+f(xy + x + y) + f\left(\frac{1}{x}\right) f\left(\frac{1}{y}\right) = 1 \quad \text{for every } x, y \in \mathbb{R}_+.
+$$
+
+對所有 $x, y \in \mathbb{R}_+$ 均成立。
+
+Let $\mathbb{R}_+$ be the set of positive real numbers. Find all functions $f : \mathbb{R}_+ \to \mathbb{R}_+$ such that
+$$
+f(xy + x + y) + f\left(\frac{1}{x}\right) f\left(\frac{1}{y}\right) = 1
+$$
+for every $x, y \in \mathbb{R}_+$.
+
+---
+
+## R209
+
+Given a nondegenerate triangle $A B C$, with circumcentre $O$, orthocentre $H$, and circumradius $R$, prove that $|O H|<3 R$.
+
+---
+
+## R210
+
+Problem:
+
+Eine positive ganze Zahl $n$ heißt neckisch, wenn man sie in der Form $n = a^{b} + b$ mit zwei ganzen Zahlen $a, b \geq 2$ schreiben kann.
+Man entscheide, ob es 102 aufeinanderfolgende positive ganze Zahlen gibt, von denen genau 100 neckisch sind.
+
+---
